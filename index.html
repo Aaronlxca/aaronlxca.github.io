@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0c1b27" />
+  <meta name="description" content="Aaron's professional portfolio in investment analysis, strategic finance, sustainable finance and business strategy." />
+  <title>Aaron | Investment Analysis & Strategy</title>
+  <style>
+    :root{--ink:#14232e;--muted:#5a6a75;--forest:#217a5c;--lime:#c2e7cf;--cream:#f6f8f4;--white:#fff;--line:#dce5df;--navy:#0c1b27;--shadow:0 20px 70px rgba(12,27,39,.09)}
+    *,*::before,*::after{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;color:var(--ink);font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--cream);-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}a:focus-visible{outline:3px solid #3abf8a;outline-offset:4px;border-radius:4px}
+    .container{width:min(1120px,calc(100% - 48px));margin:0 auto}
+    .site-header{position:relative;z-index:1;background:var(--navy);color:#edf6f1;border-bottom:1px solid rgba(255,255,255,.12)}
+    .nav{display:flex;align-items:center;justify-content:space-between;min-height:82px;gap:24px}
+    .brand{font-size:1.15rem;font-weight:750;letter-spacing:-.04em}.brand span{color:#74d4aa}
+    .nav-links{display:flex;align-items:center;gap:30px;color:#cbd8da;font-size:.88rem}.nav-links a:hover{color:#fff}
+    .nav-links .nav-cta{border:1px solid rgba(255,255,255,.28);padding:10px 15px;border-radius:8px;color:#fff}
+    .hero{overflow:hidden;background:var(--navy);color:#fff;position:relative}
+    .hero::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 85% 25%,rgba(65,159,126,.18),transparent 43%);pointer-events:none}
+    .hero-inner{min-height:510px;padding:105px 0 110px;display:grid;grid-template-columns:1.25fr .75fr;gap:45px;align-items:center;position:relative}
+    .eyebrow{color:#9ae2bc;text-transform:uppercase;font-size:.75rem;font-weight:750;letter-spacing:.17em;margin:0 0 22px}
+    h1{font-size:clamp(3.2rem,6.3vw,5.3rem);line-height:1.055;letter-spacing:-.065em;margin:0 0 25px;font-weight:760;max-width:800px}
+    h1 em{font-style:normal;color:#8ed9af}
+    .lead{font-size:1.08rem;line-height:1.85;color:#c9d9dc;max-width:620px;margin:0}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+    .button{display:inline-flex;align-items:center;gap:10px;font-weight:650;padding:14px 20px;border-radius:8px;font-size:.91rem;transition:transform .16s,background .16s}
+    .button:hover{transform:translateY(-2px)}.button-primary{background:#a3e2bf;color:#102a21}.button-primary:hover{background:#c0eed3}
+    .button-secondary{border:1px solid rgba(255,255,255,.25);color:#edf6f2}
+    .hero-art{position:relative;width:100%;max-width:365px;aspect-ratio:1;justify-self:end;border:1px solid rgba(141,214,172,.19);border-radius:28px;background:linear-gradient(155deg,rgba(51,122,105,.18),rgba(10,31,45,.45));display:grid;place-items:center;box-shadow:0 28px 80px rgba(0,0,0,.2)}
+    .orbit{position:absolute;inset:11%;border:1px solid rgba(121,218,166,.22);border-radius:50%}.orbit:nth-child(2){inset:22%}.orbit:nth-child(3){inset:33%}
+    .diamond{width:106px;height:106px;border:1px solid #8ed9af;transform:rotate(45deg);display:grid;place-items:center;box-shadow:0 0 60px rgba(93,206,143,.2)}
+    .diamond::after{content:"";width:42px;height:42px;background:#8ed9af;display:block;border-radius:4px}
+    .hero-art-label{position:absolute;bottom:26px;left:26px;right:26px;display:flex;justify-content:space-between;font-size:.65rem;text-transform:uppercase;letter-spacing:.12em;color:#9bb8b5}
+    section.content{padding:100px 0}.section-kicker{font-size:.78rem;font-weight:750;letter-spacing:.16em;text-transform:uppercase;color:var(--forest);margin:0 0 17px}
+    h2{font-size:clamp(2rem,4vw,3rem);letter-spacing:-.055em;line-height:1.15;margin:0 0 22px}
+    .section-intro{font-size:1.05rem;line-height:1.85;color:var(--muted);max-width:755px;margin:0 0 36px}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:110px;align-items:start}
+    .about-copy{color:var(--muted);font-size:1.02rem;line-height:1.95;margin:0}
+    .about-meta{border-top:1px solid var(--line);margin:6px 0 0}.meta-row{padding:18px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:14px}
+    .meta-row span:first-child{font-size:.78rem;text-transform:uppercase;letter-spacing:.09em;color:#70817e;font-weight:750}.meta-row span:last-child{text-align:right;font-size:.93rem;font-weight:650}
+    .focus{background:#eaf0ea}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:white;border:1px solid #e2e8e2;padding:32px 28px 34px;border-radius:16px;min-height:262px;box-shadow:0 10px 24px rgba(12,27,39,.025)}
+    .card-number{font-size:.77rem;font-weight:780;color:var(--forest);letter-spacing:.11em;margin-bottom:40px}
+    h3{font-size:1.33rem;letter-spacing:-.035em;line-height:1.2;margin:0 0 14px}.card p{color:var(--muted);line-height:1.8;font-size:.91rem;margin:0}
+    .work-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:65px;align-items:center}
+    .work-panel{border:1px solid var(--line);border-radius:16px;background:white;padding:32px;box-shadow:var(--shadow)}
+    .work-panel .small{font-size:.75rem;text-transform:uppercase;letter-spacing:.11em;color:var(--forest);font-weight:760;margin-bottom:16px}
+    .work-panel p{color:var(--muted);line-height:1.8;margin-bottom:0}.work-panel h3{font-size:1.5rem}
+    .closing{background:var(--navy);color:white;padding:68px 0}.closing-inner{display:flex;align-items:center;justify-content:space-between;gap:30px}
+    .closing h2{font-size:2.2rem;margin-bottom:10px}.closing p{color:#b9ced0;margin:0;line-height:1.8}
+    footer{background:#08141e;color:#93aeb2;font-size:.81rem;padding:25px 0}footer .container{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+    @media (max-width:880px){.hero-inner{grid-template-columns:1fr;padding:86px 0}.hero-art{display:none}.about-grid,.work-grid{grid-template-columns:1fr;gap:28px}.cards{grid-template-columns:1fr}.card{min-height:auto}.card-number{margin-bottom:26px}}
+    @media (max-width:560px){.container{width:min(100% - 36px,1120px)}.nav{min-height:72px}.nav-links{gap:18px}.nav-links a:first-child{display:none}.hero-inner{padding:78px 0 86px}h1{font-size:3.2rem}.closing-inner{flex-direction:column;align-items:flex-start}section.content{padding:72px 0}.meta-row{display:block}.meta-row span{display:block!important;text-align:left!important}.meta-row span:last-child{padding-top:6px}}
+    @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button{transition:none}}
+  </style>
+</head>
+<body>
+  <header class="site-header"><div class="container nav">
+    <a class="brand" href="#top" aria-label="Aaron, homepage">aaron<span>.</span></a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#about">About</a><a href="#focus">Focus</a><a href="#work">Work</a>
+      <a class="nav-cta" href="https://github.com/Aaronlxca" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+    </nav>
+  </div></header>
+  <main id="top">
+    <section class="hero" aria-labelledby="main-heading"><div class="container hero-inner">
+      <div>
+        <p class="eyebrow">Investment analysis · Strategic finance · Sustainability</p>
+        <h1 id="main-heading">Finance with a <em>long-term perspective.</em></h1>
+        <p class="lead">I'm Aaron. My professional focus spans investment analysis, strategic finance and business strategy, with a long-term direction toward energy-transition investment and advisory.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#focus">Explore my focus <span aria-hidden="true">↗</span></a>
+          <a class="button button-secondary" href="https://github.com/Aaronlxca" target="_blank" rel="noopener noreferrer">View GitHub <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true"><div class="orbit"></div><div class="orbit"></div><div class="orbit"></div><div class="diamond"></div><div class="hero-art-label"><span>Analysis</span><span>Strategy</span><span>Impact</span></div></div>
+    </div></section>
+    <section class="content" id="about" aria-labelledby="about-title"><div class="container about-grid">
+      <div><p class="section-kicker">01 / About</p><h2 id="about-title">An analytical approach to complex decisions.</h2></div>
+      <div><p class="about-copy">My professional interests sit at the intersection of financial decision-making, investment evaluation, business models and sustainability. I am especially interested in how rigorous analysis can inform capital allocation, business strategy and long-term value creation.</p>
+        <div class="about-meta" aria-label="Professional areas">
+          <div class="meta-row"><span>Core disciplines</span><span>Finance · Investments · Strategy</span></div>
+          <div class="meta-row"><span>Long-term direction</span><span>Energy transition & advisory</span></div>
+        </div>
+      </div>
+    </div></section>
+    <section class="content focus" id="focus" aria-labelledby="focus-title"><div class="container">
+      <p class="section-kicker">02 / Areas of focus</p><h2 id="focus-title">Where I concentrate my work.</h2>
+      <p class="section-intro">These themes reflect my documented areas of professional experience and development, rather than a claim that every project listed has been published.</p>
+      <div class="cards">
+        <article class="card"><div class="card-number">01 / ANALYSIS</div><h3>Investment & financial analysis</h3><p>Financial modeling, business evaluation and the analytical foundations of investment decisions.</p></article>
+        <article class="card"><div class="card-number">02 / IMPACT</div><h3>Sustainable finance</h3><p>Impact investment, sustainability considerations and the relationship between financial viability and long-term outcomes.</p></article>
+        <article class="card"><div class="card-number">03 / STRATEGY</div><h3>Business strategy</h3><p>Business-model assessment, strategic thinking and the translation of analysis into practical decisions.</p></article>
+      </div>
+    </div></section>
+    <section class="content" id="work" aria-labelledby="work-title"><div class="container work-grid">
+      <div><p class="section-kicker">03 / Selected work</p><h2 id="work-title">Evidence before embellishment.</h2><p class="section-intro">This section is reserved for publishable case studies, models and analytical projects. Public examples will be added after factual verification and a confidentiality review.</p></div>
+      <div class="work-panel"><p class="small">Portfolio development</p><h3>Selected work will be published here.</h3><p>For now, the website provides a clear professional introduction. Repository links and reproducible project materials will be linked here once available for public release.</p></div>
+    </div></section>
+    <section class="closing" aria-labelledby="contact-title"><div class="container closing-inner">
+      <div><p class="section-kicker" style="color:#91d6ae">04 / Connect</p><h2 id="contact-title">Explore my professional work.</h2><p>My public GitHub profile is the current contact and project destination.</p></div>
+      <a class="button button-primary" href="https://github.com/Aaronlxca" target="_blank" rel="noopener noreferrer">Visit GitHub ↗</a>
+    </div></section>
+  </main>
+  <footer><div class="container"><span>© <span id="year">2026</span> Aaron.</span><span>Portfolio · Version 1.0</span></div></footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
