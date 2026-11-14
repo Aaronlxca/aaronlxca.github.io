@@ -17,7 +17,7 @@
     ::selection{background:#9fddbb;color:#0b1925}
     .topbar{position:fixed;z-index:30;top:0;left:0;right:0;height:var(--header);display:flex;align-items:center;justify-content:space-between;padding:0 max(5.4vw,28px);background:rgba(8,24,34,.9);color:#e9f1ee;border-bottom:1px solid rgba(255,255,255,.11);backdrop-filter:blur(16px)}
     .brand{font-size:1.05rem;font-weight:760;letter-spacing:-.035em}.brand b{color:var(--mint)}
-    .top-links{display:flex;align-items:center;gap:28px;font-size:.84rem;letter-spacing:.015em;color:#b9d1cd}
+    .top-links{display:flex;align-items:center;gap:18px;font-size:.84rem;letter-spacing:.015em;color:#b9d1cd}
     .top-links a:hover{color:#fff}
     .top-links a:last-child{border:1px solid rgba(169,217,193,.38);border-radius:7px;padding:10px 13px;color:#e1f7ea}
     .deck{height:100vh;height:100dvh;overflow-y:auto;overflow-x:hidden;scroll-snap-type:y mandatory;scroll-behavior:smooth;overscroll-behavior-y:contain}
@@ -111,6 +111,7 @@
       .work-cards{gap:10px}.work-card{padding:20px}
     }
     @media (max-width:720px), (max-height:600px){
+      .top-links a:not(:last-child){display:none}
       .topbar{padding:0 22px;height:66px}.top-links{gap:12px}.top-links a:first-child{display:none}
       .deck{scroll-snap-type:y proximity}
       .page{padding:112px 26px 75px;min-height:100vh;min-height:100dvh;height:auto;overflow:visible}
@@ -134,17 +135,17 @@
   <header class="topbar">
     <a class="brand" href="#intro" aria-label="Aaron Lozano, back to introduction">aaron<b>.</b>lozano</a>
     <nav class="top-links" aria-label="Main navigation">
-      <a href="#experience">Experience</a>
-      <a href="#selected-work">Selected work</a>
-      <a href="#connect">Connect</a>
+      <a href="#about">About</a><a href="#experience">Experience</a>
+      <a href="#projects">Projects</a><a href="#resources">Resources</a>
+      <a href="#connect">Contact</a>
     </nav>
   </header>
   <nav class="rail" aria-label="Section navigation">
     <a href="#intro" aria-label="Introduction" aria-current="true"></a>
-    <a href="#expertise" aria-label="Areas of expertise"></a>
+    <a href="#about" aria-label="About"></a>
     <a href="#experience" aria-label="Experience"></a>
-    <a href="#selected-work" aria-label="Selected work"></a>
-    <a href="#connect" aria-label="Background and connect"></a>
+    <a href="#projects" aria-label="Projects"></a><a href="#resources" aria-label="Resources"></a>
+    <a href="#connect" aria-label="Contact"></a>
   </nav>
   <main class="deck" id="deck">
     <section class="page dark hero" id="intro" aria-labelledby="intro-title">
@@ -155,7 +156,7 @@
         <h1 id="intro-title">From financial analysis<br>to <span class="hero-accent">better decisions.</span></h1>
         <p class="body-lg muted">I work across investment evaluation, business finance and strategic problem-solving. My long-term direction is to help evaluate, finance and build businesses—particularly those advancing the climate and energy transition.</p>
         <div class="actions">
-          <a class="btn btn-primary" href="#expertise">Explore my work &darr;</a>
+          <a class="btn btn-primary" href="#projects">Explore projects &darr;</a>
           <a class="btn btn-outline" href="https://www.linkedin.com/in/aaronllc/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
         </div>
         <small>Investment analysis · Financial modeling · Operational strategy</small>
@@ -164,11 +165,11 @@
       <span class="scroll-hint" aria-hidden="true">Scroll to explore <span>↓</span></span>
     </section>
 
-    <section class="page light" id="expertise" aria-labelledby="expertise-title">
+    <section class="page light" id="about" aria-labelledby="about-title">
       <div class="inner">
         <div class="section-top">
-          <div><p class="eyebrow">02 / Perspective</p><h2 id="expertise-title">Finance, strategy,<br>and execution.</h2></div>
-          <p class="section-lead muted">The work I value connects rigorous analysis with decisions that improve how businesses are financed and operated.</p>
+          <div><p class="eyebrow">02 / About</p><h2 id="about-title">Finance, strategy,<br>and execution.</h2></div>
+          <p class="section-lead muted">My experience spans investment assessment, sustainable finance research, SME financial systems, and business operations. My focus is on making complex financial questions understandable and actionable.</p>
         </div>
         <div class="skill-grid">
           <article class="skill">
@@ -191,7 +192,7 @@
           <strong>Long-term direction</strong><span>Find</span><span>→</span><span>Evaluate</span><span>→</span><span>Finance</span><span>→</span><span>Build</span><span>→</span><span>Scale</span><span>→</span><span>Improve</span>
         </div>
       </div>
-      <span class="corner">02 / Expertise</span>
+      <span class="corner">02 / About</span>
     </section>
 
     <section class="page forest" id="experience" aria-labelledby="experience-title">
@@ -200,7 +201,7 @@
           <p class="eyebrow">03 / Experience</p>
           <h2 id="experience-title">Applied analysis.<br>Real businesses.</h2>
           <p class="body-lg muted">My work has included venture assessment, investment-readiness support, financial planning and operational problem-solving for emerging and established businesses.</p>
-          <div class="big-stats" aria-label="Selected Sustainable Investments Navigator project figures">
+          <div class="actions"><a class="btn btn-primary" href="resume.html">View full résumé ↗</a></div><div class="big-stats" aria-label="Selected Sustainable Investments Navigator project figures">
             <div><span class="stat-num">~65</span><span class="stat-label">ventures screened through an assessment workflow</span></div>
             <div><span class="stat-num">~35</span><span class="stat-label">ventures reviewed in greater financial depth</span></div>
           </div>
@@ -226,10 +227,10 @@
       <span class="corner">03 / Experience</span>
     </section>
 
-    <section class="page paper" id="selected-work" aria-labelledby="work-title">
+    <section class="page paper" id="projects" aria-labelledby="work-title">
       <div class="inner">
         <div class="work-head">
-          <p class="eyebrow">04 / Selected work</p>
+          <p class="eyebrow">04 / Projects</p>
           <h2 id="work-title">Work, research<br>& ongoing exploration.</h2>
           <p class="body-lg muted">A selection of professional engagements and analytical research. Work-in-progress items are identified explicitly; confidential client materials are not published.</p>
         </div>
@@ -254,18 +255,34 @@
           </article>
         </div>
       </div>
-      <span class="corner">04 / Selected work</span>
+      <span class="corner">04 / Projects</span>
     </section>
 
+    
+    <section class="page light" id="resources" aria-labelledby="resources-title">
+      <div class="inner">
+        <div class="work-head">
+          <p class="eyebrow">05 / Resources</p>
+          <h2 id="resources-title">Good sources.<br>Better questions.</h2>
+          <p class="body-lg muted">Public data and research references relevant to financial analysis and the energy transition. External resources are credited to their publishers; my own analytical materials will be added once they are ready to share.</p>
+        </div>
+        <div class="work-cards">
+          <article class="work-card"><p class="work-kind">Third-party resource · Solar data</p><h3>Global Solar Atlas</h3><p>Solar irradiation, resource maps and photovoltaic power-potential data supporting preliminary project assessments.</p><a class="foot" href="https://globalsolaratlas.info/map" target="_blank" rel="noopener noreferrer">Explore resource ↗</a></article>
+          <article class="work-card"><p class="work-kind">Third-party resource · Energy economics</p><h3>IRENA renewable cost research</h3><p>Research on renewable power-generation costs, investment trends and technologies.</p><a class="foot" href="https://www.irena.org/Publications/2026/Jul/Renewable-Power-Generation-Costs-in-2025" target="_blank" rel="noopener noreferrer">Read publication ↗</a></article>
+          <article class="work-card"><p class="work-kind">Original resources · Planned</p><h3>Models & analytical notes</h3><p>Future home for reviewed models, research notes and educational material. Nothing unpublished is presented as completed work.</p><span class="foot">Coming later</span></article>
+        </div>
+      </div>
+      <span class="corner">05 / Resources</span>
+    </section>
     <section class="page dark" id="connect" aria-labelledby="connect-title">
       <div class="inner about-layout">
         <div>
-          <p class="eyebrow">05 / Background & connect</p>
+          <p class="eyebrow">06 / Contact</p>
           <h2 id="connect-title">Let's connect around<br><span class="hero-accent">meaningful work.</span></h2>
           <p class="body-lg muted">My focus is on analytical and strategic roles where financial decisions, business-building and long-term value creation intersect. I am particularly interested in climate and energy transition, as well as mission-aligned financial technology.</p>
           <div class="connect-buttons">
             <a class="btn btn-primary" href="https://www.linkedin.com/in/aaronllc/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
-            <a class="btn btn-ghost" href="https://github.com/Aaronlxca" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            <a class="btn btn-ghost" href="https://github.com/Aaronlxca" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a class="btn btn-ghost" href="resume.html">Full résumé ↗</a>
           </div>
         </div>
         <dl class="facts">
@@ -275,10 +292,10 @@
           <div class="fact"><dt>Portfolio</dt><dd>Selected project materials will be linked as they become ready for public release.</dd></div>
         </dl>
       </div>
-      <span class="corner">05 / Connect · © <span id="year">2026</span> José Aarón Lozano Campos</span>
+      <span class="corner">06 / Contact · © <span id="year">2026</span> José Aarón Lozano Campos</span>
     </section>
   </main>
-  <div class="slide-count" aria-live="off"><span id="current-slide">01</span> / 05</div>
+  <div class="slide-count" aria-live="off"><span id="current-slide">01</span> / 06</div>
   <script>
     (function(){
       document.getElementById('year').textContent = new Date().getFullYear();
