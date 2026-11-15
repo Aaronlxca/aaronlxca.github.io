@@ -9,7 +9,7 @@
 <style>
 :root{--navy:#102631;--navy-deep:#0b1d28;--navy-soft:#193946;--green:#246d54;--mint:#b4edc3;--lime:#d3f49b;--cream:#f6f8f4;--mist:#ecf0ef;--paper:#fff;--ink:#152e34;--muted:#52676b;--line:#d8e2dd;--head:76px}
 *{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-snap-type:y proximity}
+html{scroll-behavior:smooth;scroll-snap-type:none}
 body{margin:0;font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--cream);-webkit-font-smoothing:antialiased}
 a{color:inherit;text-decoration:none}
 button,summary{font:inherit}
@@ -63,6 +63,27 @@ h3{font-size:1.28rem;line-height:1.25;letter-spacing:-.027em;margin:0 0 11px}
 .chapter-footer{position:absolute;bottom:27px;left:max(calc((100vw - 1190px)/2),44px);font-size:.72rem;text-transform:uppercase;letter-spacing:.14em;font-weight:780;opacity:.55}
 .chapter-next{position:absolute;right:clamp(30px,5vw,90px);bottom:25px;font-size:.79rem;color:inherit;opacity:.63}
 .chapter-next:hover{opacity:1}
+.chapter-next{display:inline-flex;align-items:center;gap:9px;font-weight:750;opacity:.85;border:1px solid currentColor;border-radius:100px;padding:9px 14px;text-transform:uppercase;letter-spacing:.10em;font-size:.66rem;transition:opacity .2s,transform .2s}
+.chapter-next:hover{transform:translateY(-3px)}
+/* The cascade is progressive enhancement on large, fine-pointer screens. */
+html.cascade-enabled{scroll-snap-type:y mandatory;scroll-padding-top:0}
+html.cascade-enabled .chapter{height:100vh;height:100svh;min-height:100svh;overflow-y:auto;scroll-snap-align:start;scroll-snap-stop:always;scrollbar-width:thin;scrollbar-color:rgba(137,170,153,.3) transparent}
+html.cascade-enabled .chapter::-webkit-scrollbar{width:5px}
+html.cascade-enabled .chapter::-webkit-scrollbar-thumb{background:rgba(137,170,153,.32);border-radius:4px}
+html.cascade-enabled .chapter::after{content:"";position:absolute;left:0;right:0;top:0;height:5px;background:linear-gradient(90deg,var(--lime),#6ecdb0);transform:scaleX(0);transform-origin:left;opacity:.85;pointer-events:none;transition:transform .8s cubic-bezier(.22,1,.36,1);z-index:3}
+html.cascade-enabled .chapter.is-active::after{transform:scaleX(1)}
+html.cascade-ready .chapter>.wrap{opacity:.22;filter:blur(3px);transform:translate3d(0,36px,0) scale(.99);transition:opacity .66s cubic-bezier(.22,1,.36,1),filter .66s ease,transform .8s cubic-bezier(.22,1,.36,1);will-change:transform,opacity}
+html.cascade-ready .chapter.is-active>.wrap{opacity:1;filter:blur(0);transform:translate3d(0,0,0) scale(1)}
+html.cascade-ready .chapter>.wrap>*{transition:opacity .7s ease,transform .85s cubic-bezier(.22,1,.36,1)}
+html.cascade-ready .chapter:not(.is-active)>.wrap>*{opacity:.65;transform:translateY(12px)}
+html.cascade-ready .chapter.is-active>.wrap>*{opacity:1;transform:translateY(0)}
+html.cascade-ready .chapter.is-active>.wrap>*:nth-child(2){transition-delay:.12s}
+html.cascade-ready .chapter.is-active>.wrap>*:nth-child(3){transition-delay:.2s}
+html.cascade-enabled .side-dots{gap:20px}
+html.cascade-enabled .side-dots:before{content:"";position:absolute;width:1px;top:-10px;bottom:-10px;left:4px;background:rgba(213,234,217,.3);z-index:-1}
+.side-dots a{position:relative}
+.side-dots a:after{content:attr(data-label);position:absolute;right:25px;top:-8px;padding:6px 10px;border-radius:6px;background:var(--navy);color:#f8fff9;font-size:.69rem;letter-spacing:.04em;font-weight:700;white-space:nowrap;opacity:0;transform:translateX(6px);pointer-events:none;transition:opacity .2s,transform .2s}
+.side-dots a:hover:after,.side-dots a:focus-visible:after{opacity:1;transform:translateX(0)}
 .section-head{display:grid;grid-template-columns:1fr .55fr;gap:55px;align-items:end;margin-bottom:32px}
 .section-head h2{max-width:700px}.section-head .lead{margin-bottom:3px}
 .about-layout{display:grid;grid-template-columns:minmax(0,1.18fr) minmax(320px,.82fr);gap:clamp(34px,5.5vw,76px);align-items:center}
@@ -139,6 +160,10 @@ h3{font-size:1.28rem;line-height:1.25;letter-spacing:-.027em;margin:0 0 11px}
 .skip{position:fixed;z-index:200;left:15px;top:-100px;background:white;color:var(--ink);padding:12px 17px;border-radius:7px}.skip:focus{top:10px}
 @media(max-width:1080px){.hero-grid{gap:25px;grid-template-columns:1fr .7fr}.visual{min-height:370px}.wrap{width:min(1190px,calc(100% - 70px))}.navigation{gap:13px}.navigation a{font-size:.76rem}.experience-grid{gap:4%}.proj-body{padding:19px}.proj{min-height:445px}}
 @media(max-width:820px){
+ html.cascade-enabled{scroll-snap-type:none}
+ html.cascade-enabled .chapter{height:auto;min-height:100svh;overflow:visible;scroll-snap-align:none}
+ html.cascade-ready .chapter>.wrap,html.cascade-ready .chapter>.wrap>*{opacity:1;filter:none;transform:none;transition:none}
+ html.cascade-enabled .chapter::after{display:none}
  :root{--head:66px}
  .wrap{width:calc(100% - 46px)}
  .menu-toggle{display:block}
@@ -194,6 +219,9 @@ h3{font-size:1.28rem;line-height:1.25;letter-spacing:-.027em;margin:0 0 11px}
  .chapter-footer{font-size:.66rem}
 }
 @media(max-height:710px) and (min-width:821px){
+ html.cascade-enabled{scroll-snap-type:none}
+ html.cascade-enabled .chapter{height:auto;min-height:100svh;overflow:visible}
+ html.cascade-ready .chapter>.wrap,html.cascade-ready .chapter>.wrap>*{opacity:1;filter:none;transform:none;transition:none}
  .chapter{padding-top:calc(var(--head) + 35px);padding-bottom:60px}
  html{scroll-snap-type:none}
  h1{font-size:clamp(1.95rem,min(3.6vw,5vh),3.4rem)}
@@ -211,7 +239,11 @@ h3{font-size:1.28rem;line-height:1.25;letter-spacing:-.027em;margin:0 0 11px}
  .proj-body{padding:17px}
  .proj h3{font-size:1.16rem}
 }
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn,.resource,.side-dots a{transition:none}}
+@media(prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto}
+ html.cascade-ready .chapter>.wrap,html.cascade-ready .chapter>.wrap>*,html.cascade-enabled .chapter::after{opacity:1;filter:none;transform:none;transition:none}
+ .btn,.resource,.side-dots a,.chapter-next{transition:none}
+}
 </style>
 </head>
 <body>
@@ -225,7 +257,7 @@ h3{font-size:1.28rem;line-height:1.25;letter-spacing:-.027em;margin:0 0 11px}
   </nav>
  </div>
 </header>
-<nav class="side-dots" aria-label="Jump to section"><a href="#home" aria-label="Home"></a><a href="#about" aria-label="About"></a><a href="#experience" aria-label="Experience"></a><a href="#projects" aria-label="Projects"></a><a href="#resources" aria-label="Resources"></a><a href="#contact" aria-label="Contact"></a></nav>
+<nav class="side-dots" aria-label="Jump to section"><a href="#home" aria-label="Home" data-label="Home"></a><a href="#about" aria-label="About" data-label="About"></a><a href="#experience" aria-label="Experience" data-label="Experience"></a><a href="#projects" aria-label="Projects" data-label="Projects"></a><a href="#resources" aria-label="Resources" data-label="Resources"></a><a href="#contact" aria-label="Contact" data-label="Contact"></a></nav>
 <main id="main">
 <section class="chapter dark hero" id="home" aria-labelledby="home-heading">
  <div class="wrap hero-grid">
@@ -247,7 +279,7 @@ h3{font-size:1.28rem;line-height:1.25;letter-spacing:-.027em;margin:0 0 11px}
    <div class="portrait-footer"><span>Portrait placement</span><span>Image to be added</span></div>
   </div>
  </div>
- <span class="chapter-footer">01 / Home</span><a href="#about" class="chapter-next">Scroll to explore ↓</a>
+ <span class="chapter-footer">01 / Home</span><a href="#about" class="chapter-next" aria-label="Next chapter: About">Next: About ↓</a>
 </section>
 <section class="chapter light" id="about" aria-labelledby="about-heading">
  <div class="wrap about-layout">
@@ -268,7 +300,7 @@ h3{font-size:1.28rem;line-height:1.25;letter-spacing:-.027em;margin:0 0 11px}
    </div>
   </aside>
  </div>
- <span class="chapter-footer">02 / About</span>
+ <span class="chapter-footer">02 / About</span><a href="#experience" class="chapter-next" aria-label="Next chapter: Experience">Next: Experience ↓</a>
 </section>
 <section class="chapter green" id="experience" aria-labelledby="experience-heading">
  <div class="wrap experience-grid">
@@ -286,7 +318,7 @@ h3{font-size:1.28rem;line-height:1.25;letter-spacing:-.027em;margin:0 0 11px}
    <article class="exp-item"><span class="exp-date">2020–2021</span><div><h3>SVX Mexico</h3><p class="role">Fellow · Research & Investor Relations Support</p><p>Contributed to financial reviews, research, and early Navigator development.</p></div></article>
   </div>
  </div>
- <span class="chapter-footer">03 / Experience</span>
+ <span class="chapter-footer">03 / Experience</span><a href="#projects" class="chapter-next" aria-label="Next chapter: Projects">Next: Projects ↓</a>
 </section>
 <section class="chapter paper" id="projects" aria-labelledby="projects-heading">
  <div class="wrap">
@@ -307,7 +339,7 @@ h3{font-size:1.28rem;line-height:1.25;letter-spacing:-.027em;margin:0 0 11px}
   </div>
   <p class="projects-note">Independent initiatives, including a future business-assessment experience, will be connected when their public-facing materials are validated.</p>
  </div>
- <span class="chapter-footer">04 / Projects</span>
+ <span class="chapter-footer">04 / Projects</span><a href="#resources" class="chapter-next" aria-label="Next chapter: Resources">Next: Resources ↓</a>
 </section>
 <section class="chapter mist" id="resources" aria-labelledby="resources-heading">
  <div class="wrap">
@@ -318,7 +350,7 @@ h3{font-size:1.28rem;line-height:1.25;letter-spacing:-.027em;margin:0 0 11px}
    <div class="resource soon"><span class="label">Original material · Planned</span><span class="symbol" aria-hidden="true">◇</span><h3>Models, notes & guides</h3><p>A place for reviewed financial models, explanatory articles and analytical templates as these become suitable for public release.</p><span class="resource-link">Not yet published</span></div>
   </div>
  </div>
- <span class="chapter-footer">05 / Resources</span>
+ <span class="chapter-footer">05 / Resources</span><a href="#contact" class="chapter-next" aria-label="Next chapter: Contact">Next: Contact ↓</a>
 </section>
 <section class="chapter ink" id="contact" aria-labelledby="contact-heading">
  <div class="wrap connect-layout">
@@ -343,13 +375,95 @@ h3{font-size:1.28rem;line-height:1.25;letter-spacing:-.027em;margin:0 0 11px}
 </main>
 <script>
 (function(){
- document.getElementById('year').textContent=new Date().getFullYear();
- var btn=document.getElementById('menu-toggle'),nav=document.getElementById('nav');
+ "use strict";
+ var year=document.getElementById('year');
+ if(year)year.textContent=new Date().getFullYear();
+ var btn=document.getElementById('menu-toggle');
+ var nav=document.getElementById('nav');
+ function closeMenu(){nav.classList.remove('open');btn.setAttribute('aria-expanded','false');btn.textContent='Menu ☰';}
  btn.addEventListener('click',function(){var open=nav.classList.toggle('open');btn.setAttribute('aria-expanded',String(open));btn.textContent=open?'Close ×':'Menu ☰';});
- document.querySelectorAll('#nav a').forEach(function(a){a.addEventListener('click',function(){nav.classList.remove('open');btn.setAttribute('aria-expanded','false');btn.textContent='Menu ☰';});});
- document.addEventListener('keydown',function(e){if(e.key==='Escape'){nav.classList.remove('open');btn.setAttribute('aria-expanded','false');btn.textContent='Menu ☰';}});
- var pages=Array.from(document.querySelectorAll('main>.chapter'));var links=Array.from(document.querySelectorAll('a[href^="#"]'));
- if('IntersectionObserver' in window){var observer=new IntersectionObserver(function(entries){entries.forEach(function(item){if(item.isIntersecting&&item.intersectionRatio>.36){var id='#'+item.target.id;links.forEach(function(a){if(a.closest('.navigation')||a.closest('.side-dots')){if(a.getAttribute('href')===id)a.setAttribute('aria-current','true');else a.removeAttribute('aria-current');}});}});},{threshold:[.36,.5,.75]});pages.forEach(function(section){observer.observe(section)});}
+ Array.from(nav.querySelectorAll('a')).forEach(function(a){a.addEventListener('click',closeMenu);});
+ document.addEventListener('keydown',function(e){if(e.key==='Escape')closeMenu();});
+ var pages=Array.from(document.querySelectorAll('main>.chapter'));
+ var navLinks=Array.from(document.querySelectorAll('.navigation a[href^="#"],.side-dots a[href^="#"]'));
+ var cascadeQuery=window.matchMedia('(min-width:821px) and (min-height:711px) and (pointer:fine)');
+ var motionQuery=window.matchMedia('(prefers-reduced-motion:reduce)');
+ var activeIndex=0, wheelTotal=0, wheelLockedUntil=0;
+ function nearestSection(){
+  var min=Infinity,best=0;
+  pages.forEach(function(section,i){var top=Math.abs(section.getBoundingClientRect().top);if(top<min){min=top;best=i;}});
+  return best;
+ }
+ function setCurrent(index){
+  if(index<0||index>=pages.length)return;
+  activeIndex=index;
+  pages.forEach(function(page,i){page.classList.toggle('is-active',i===index);});
+  navLinks.forEach(function(link){if(link.getAttribute('href')==='#'+pages[index].id)link.setAttribute('aria-current','true');else link.removeAttribute('aria-current');});
+ }
+ function configureCascade(){
+  var enabled=cascadeQuery.matches;
+  document.documentElement.classList.toggle('cascade-enabled',enabled);
+  document.documentElement.classList.toggle('cascade-ready',enabled&&!motionQuery.matches);
+  pages.forEach(function(page){if(!enabled)page.scrollTop=0;});
+  wheelTotal=0;
+  setCurrent(nearestSection());
+ }
+ function moveTo(index){
+  if(index<0||index>=pages.length)return;
+  setCurrent(index);
+  pages[index].scrollIntoView({behavior:motionQuery.matches?'auto':'smooth',block:'start'});
+ }
+ // A chapter is a self-contained scroll area on desktop. Read long content
+ // before advancing; at the edge, one deliberate wheel gesture moves a chapter.
+ function canScrollWithin(page,delta){
+  if(!page||page.scrollHeight<=page.clientHeight+2)return false;
+  if(delta>0)return page.scrollTop+page.clientHeight<page.scrollHeight-3;
+  return page.scrollTop>3;
+ }
+ window.addEventListener('wheel',function(e){
+  if(!cascadeQuery.matches||e.ctrlKey||e.metaKey||e.shiftKey||e.defaultPrevented)return;
+  if(e.target.closest('input,textarea,select,[contenteditable="true"]'))return;
+  var now=performance.now();
+  if(now<wheelLockedUntil){e.preventDefault();return;}
+  var dy=e.deltaY*(e.deltaMode===1?16:e.deltaMode===2?window.innerHeight:1);
+  if(Math.abs(dy)<.5)return;
+  var index=nearestSection(),page=pages[index];
+  if(canScrollWithin(page,dy)){wheelTotal=0;return;}
+  if(dy>0&&index===pages.length-1)return;
+  if(dy<0&&index===0)return;
+  e.preventDefault();
+  if((wheelTotal>0)!==(dy>0))wheelTotal=0;
+  wheelTotal+=dy;
+  if(Math.abs(wheelTotal)<64)return;
+  wheelTotal=0;
+  wheelLockedUntil=now+900;
+  moveTo(index+(dy>0?1:-1));
+ },{passive:false});
+ // Keep chapter highlights synchronized with wheel, navigation links,
+ // keyboard scroll, touch and direct #anchors.
+ var raf=false;
+ window.addEventListener('scroll',function(){
+  if(raf)return;
+  raf=true;
+  requestAnimationFrame(function(){setCurrent(nearestSection());raf=false;});
+ },{passive:true});
+ window.addEventListener('resize',configureCascade,{passive:true});
+ if(cascadeQuery.addEventListener)cascadeQuery.addEventListener('change',configureCascade);
+ if(motionQuery.addEventListener)motionQuery.addEventListener('change',configureCascade);
+ Array.from(document.querySelectorAll('a[href^="#"]')).forEach(function(link){
+  link.addEventListener('click',function(e){
+   if(!cascadeQuery.matches)return;
+   var id=link.getAttribute('href').slice(1);
+   var index=pages.findIndex(function(p){return p.id===id;});
+   if(index<0)return;
+   e.preventDefault();
+   history.replaceState(null,'','#'+id);
+   moveTo(index);
+  });
+ });
+ configureCascade();
+ // Direct-link navigation may resolve after layout; keep the intended chapter visible.
+ if(location.hash){var requested=pages.findIndex(function(p){return '#'+p.id===location.hash;});if(requested>=0){setCurrent(requested);}}
 })();
 </script>
 </body>
