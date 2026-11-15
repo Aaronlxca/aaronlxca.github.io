@@ -35,8 +35,8 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #68
 .eyebrow:before{content:"";display:block;width:21px;height:3px;border-radius:3px;background:currentColor}
 .dark .eyebrow,.ink .eyebrow,.green .eyebrow{color:var(--lime)}
 h1,h2,h3,p{margin-top:0}
-h1{font-size:clamp(3.5rem,6.55vw,6.5rem);letter-spacing:-.076em;line-height:1.035;margin:0 0 25px;font-weight:790}
-h2{font-size:clamp(2.9rem,5.2vw,5.3rem);letter-spacing:-.067em;line-height:1.06;margin:0 0 25px;font-weight:765}
+h1{font-size:clamp(2.1rem,min(4.1vw,5.6vh),4.2rem);letter-spacing:-.065em;line-height:1.09;margin:0 0 21px;font-weight:790;text-wrap:balance;overflow-wrap:break-word}
+h2{font-size:clamp(1.95rem,min(3.3vw,4.8vh),3.35rem);letter-spacing:-.055em;line-height:1.12;margin:0 0 21px;font-weight:765;text-wrap:balance;overflow-wrap:break-word}
 h3{font-size:1.28rem;line-height:1.25;letter-spacing:-.027em;margin:0 0 11px}
 .lead{font-size:clamp(1.02rem,1.5vw,1.17rem);line-height:1.75;color:var(--muted);max-width:720px}
 .dark .lead,.ink .lead,.green .lead{color:#c5dcd6}
@@ -50,7 +50,7 @@ h3{font-size:1.28rem;line-height:1.25;letter-spacing:-.027em;margin:0 0 11px}
 .ctas{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:30px}
 .hero{background:radial-gradient(circle at 85% 23%,#20473f 0,rgba(32,71,63,.14) 35%,transparent 58%),linear-gradient(140deg,var(--navy),#0b1c27)}
 .hero-grid{display:grid;grid-template-columns:1.05fr .83fr;align-items:center;gap:70px}
-.hero h1{max-width:840px;font-size:clamp(2.85rem,4.45vw,4.85rem)}
+.hero h1{max-width:840px;font-size:clamp(2.1rem,min(4.15vw,5.55vh),4.15rem);line-height:1.08}
 .hero h1 .accent{display:block}
 .hero .lead{max-width:650px}
 .hero .person{color:#d7e9e1;font-weight:680;letter-spacing:.015em;font-size:.99rem;margin-bottom:25px}
@@ -67,7 +67,7 @@ h3{font-size:1.28rem;line-height:1.25;letter-spacing:-.027em;margin:0 0 11px}
 .section-head h2{max-width:700px}.section-head .lead{margin-bottom:3px}
 .about-layout{display:grid;grid-template-columns:minmax(0,1.18fr) minmax(320px,.82fr);gap:clamp(34px,5.5vw,76px);align-items:center}
 .about-intro{max-width:690px}
-#about h2{font-size:clamp(2.55rem,4.25vw,4.5rem);margin-bottom:22px}
+#about h2{font-size:clamp(1.95rem,min(3.1vw,4.6vh),3.2rem);margin-bottom:20px}
 .about-intro .lead{font-size:clamp(.97rem,1.2vw,1.05rem);line-height:1.66;margin-bottom:15px;max-width:65ch}
 .about-intro .lead:last-child{margin-bottom:0}
 .focus-tags{display:flex;gap:9px;flex-wrap:wrap;margin-top:23px}
@@ -147,6 +147,10 @@ h3{font-size:1.28rem;line-height:1.25;letter-spacing:-.027em;margin:0 0 11px}
  .navigation a{font-size:.95rem;padding:10px 4px}
  .navigation .nav-resume{padding:11px 14px}
  .chapter{padding-top:calc(var(--head) + 50px);padding-bottom:77px}
+ html{scroll-snap-type:none}
+ h2{font-size:clamp(1.9rem,4.65vw,2.7rem)}
+ .hero h1{font-size:clamp(2rem,5.1vw,3.1rem)}
+ #about h2{font-size:clamp(1.9rem,4.6vw,2.65rem)}
  .hero-grid{grid-template-columns:1fr}
  .hero-portrait{width:min(100%,275px)}
  .section-head,.experience-grid,.connect-layout{grid-template-columns:1fr;gap:23px}
@@ -162,7 +166,9 @@ h3{font-size:1.28rem;line-height:1.25;letter-spacing:-.027em;margin:0 0 11px}
 @media(max-width:620px){
  html{scroll-snap-type:none}
  .chapter{min-height:100svh;scroll-snap-align:none;padding:calc(var(--head) + 43px) 0 77px}
- h1{font-size:clamp(3.05rem,11vw,4.35rem)}h2{font-size:clamp(2.5rem,9.9vw,3.75rem)}
+ h1{font-size:clamp(1.8rem,7.2vw,2.5rem)}
+ h2{font-size:clamp(1.85rem,7.4vw,2.55rem)}
+ .hero h1{font-size:clamp(1.8rem,7.2vw,2.5rem);line-height:1.1;letter-spacing:-.05em}
  .hero .person{font-size:.89rem}
  .lead{font-size:1rem}
  .ctas{align-items:stretch}.ctas .btn{width:100%}
@@ -177,7 +183,7 @@ h3{font-size:1.28rem;line-height:1.25;letter-spacing:-.027em;margin:0 0 11px}
  .approach-grid{grid-template-columns:1fr}
  .approach{grid-template-columns:28px minmax(0,1fr);gap:12px;padding:15px 0}
  .approach:last-child{border-bottom:0;padding-bottom:0}
- #about h2{font-size:clamp(2.4rem,9.3vw,3.6rem)}
+ #about h2{font-size:clamp(1.85rem,7.1vw,2.5rem)}
  .exp-list{margin-top:15px}.exp-item{grid-template-columns:78px 1fr;gap:10px}
  .exp-metric{flex:1;min-width:90px;padding:12px}
  .proj-list,.resource-grid{grid-template-columns:1fr}.proj{min-height:unset}
@@ -189,7 +195,11 @@ h3{font-size:1.28rem;line-height:1.25;letter-spacing:-.027em;margin:0 0 11px}
 }
 @media(max-height:710px) and (min-width:821px){
  .chapter{padding-top:calc(var(--head) + 35px);padding-bottom:60px}
- h1{font-size:clamp(3rem,5.7vw,5.5rem)}h2{font-size:clamp(2.6rem,4.4vw,4.6rem)}
+ html{scroll-snap-type:none}
+ h1{font-size:clamp(1.95rem,min(3.6vw,5vh),3.4rem)}
+ h2{font-size:clamp(1.8rem,min(3.1vw,4.75vh),3rem)}
+ .hero h1{font-size:clamp(1.95rem,min(3.7vw,5.1vh),3.4rem)}
+ #about h2{font-size:clamp(1.85rem,min(2.9vw,4.4vh),2.85rem)}
  .hero-portrait{width:min(100%,285px)}
  .hero-portrait .portrait-placeholder{aspect-ratio:4/3.7}
  .about-aside{padding:19px 23px}
