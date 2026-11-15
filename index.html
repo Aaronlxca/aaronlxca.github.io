@@ -56,30 +56,22 @@ h3{font-size:1.28rem;line-height:1.25;letter-spacing:-.027em;margin:0 0 11px}
 .hero .person{color:#d7e9e1;font-weight:680;letter-spacing:.015em;font-size:.99rem;margin-bottom:25px}
 .hero-footer{display:flex;align-items:center;gap:15px;margin-top:45px;color:#b0cfc5;font-size:.77rem}
 .hero-footer:before{content:"";height:1px;width:32px;background:#b0cfc5}
-.visual{position:relative;min-height:480px;display:flex;align-items:center;justify-content:center}
-.visual:before{position:absolute;content:"";width:min(470px,100%);aspect-ratio:1;border:1px solid rgba(185,244,201,.14);border-radius:50%;box-shadow:0 0 0 48px rgba(203,247,207,.025),0 0 0 96px rgba(203,247,207,.017)}
-.visual-card{position:relative;width:min(410px,100%);background:#f5f8f4;color:var(--ink);padding:25px;border:1px solid rgba(214,235,219,.7);border-radius:17px;box-shadow:0 28px 80px rgba(0,0,0,.23);transform:rotate(2deg)}
-.visual-top{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);padding-bottom:17px;margin-bottom:24px}
-.visual-title{font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;font-weight:850}
-.visual-pills{display:flex;gap:5px}.visual-pills i{width:8px;height:8px;background:#b1c7ba;border-radius:50%;display:block}
-.visual-main{display:grid;grid-template-columns:repeat(3,1fr);gap:11px}
-.v-step{border:1px solid #dfe8df;background:white;border-radius:10px;padding:17px 12px 18px;min-height:117px}
-.v-step span{font-size:.68rem;color:var(--green);font-weight:840}.v-step strong{display:block;font-size:.93rem;margin-top:25px}
-.v-step:nth-child(2){background:#e0f3dc}.v-step:nth-child(3){background:#d0e4dc}
-.visual-bottom{margin-top:16px;display:flex;align-items:center;justify-content:space-between;padding-top:15px;border-top:1px solid var(--line);font-size:.72rem;color:#58706b}
-.visual-tag{background:#cfedce;border-radius:6px;padding:5px 7px;font-weight:780;color:var(--green)}
+.hero-portrait{width:min(100%,380px);justify-self:center;position:relative;z-index:1}
+.hero-portrait .portrait-placeholder{box-shadow:0 30px 80px rgba(0,0,0,.24);border-color:#aacdb8}
+.hero-portrait .portrait-footer{color:#b7d5c3}
+.hero-portrait .portrait-footer span:last-child{color:var(--mint)}
 .chapter-footer{position:absolute;bottom:27px;left:max(calc((100vw - 1190px)/2),44px);font-size:.72rem;text-transform:uppercase;letter-spacing:.14em;font-weight:780;opacity:.55}
 .chapter-next{position:absolute;right:clamp(30px,5vw,90px);bottom:25px;font-size:.79rem;color:inherit;opacity:.63}
 .chapter-next:hover{opacity:1}
 .section-head{display:grid;grid-template-columns:1fr .55fr;gap:55px;align-items:end;margin-bottom:32px}
 .section-head h2{max-width:700px}.section-head .lead{margin-bottom:3px}
-.about-layout{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(260px,.75fr);gap:clamp(28px,6vw,85px);align-items:center}
-.about-intro{max-width:700px}
+.about-layout{display:block}
+.about-intro{max-width:930px}
 #about h2{font-size:clamp(2.6rem,4.65vw,4.9rem);margin-bottom:22px}
 .about-intro .lead{margin-bottom:14px}
 .focus-tags{display:flex;gap:9px;flex-wrap:wrap;margin-top:23px}
 .tag{font-size:.73rem;font-weight:740;border:1px solid #cddbd1;border-radius:100px;padding:9px 12px;color:#456357}
-.about-photo{width:min(100%,380px);justify-self:end;position:relative}
+
 .portrait-placeholder{aspect-ratio:4/4.35;background:radial-gradient(circle at 50% 35%,#e7f2e7,#d3e4d8 70%,#c4d9cd);border:1px solid #c1d6c8;border-radius:20px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}
 .portrait-placeholder:before{content:"";position:absolute;width:72%;aspect-ratio:1;left:-33%;top:-26%;border-radius:50%;background:#b1ebba}
 .portrait-placeholder:after{content:"";position:absolute;width:42%;aspect-ratio:1;right:-24%;bottom:-14%;border-radius:50%;background:#a0c7ae}
@@ -154,9 +146,9 @@ h3{font-size:1.28rem;line-height:1.25;letter-spacing:-.027em;margin:0 0 11px}
  .navigation .nav-resume{padding:11px 14px}
  .chapter{padding-top:calc(var(--head) + 50px);padding-bottom:77px}
  .hero-grid{grid-template-columns:1fr}
- .visual{display:none}
+ .hero-portrait{width:min(100%,275px)}
  .section-head,.experience-grid,.connect-layout{grid-template-columns:1fr;gap:23px}
- .about-layout{grid-template-columns:minmax(0,1fr) minmax(210px,.78fr);gap:24px}
+ .about-layout{display:block}
  .about-aside{grid-template-columns:1fr;gap:14px}
  .about-aside>.small-caps{margin:0!important}
  .about-aside{margin-top:10px}
@@ -172,9 +164,13 @@ h3{font-size:1.28rem;line-height:1.25;letter-spacing:-.027em;margin:0 0 11px}
  .hero .person{font-size:.89rem}
  .lead{font-size:1rem}
  .ctas{align-items:stretch}.ctas .btn{width:100%}
- .about-layout{grid-template-columns:1fr;gap:30px}
- .about-photo{justify-self:center;width:min(100%,330px)}
- .portrait-placeholder{aspect-ratio:4/3.75}
+ .hero-grid{display:flex;flex-direction:column;align-items:stretch;gap:23px}
+ .hero-portrait{order:-1;align-self:center;width:min(100%,185px)}
+ .hero-portrait .portrait-placeholder{aspect-ratio:1/1}
+ .hero-portrait .portrait-center svg{width:65px;height:65px}
+ .hero-portrait .portrait-center span{font-size:.58rem}
+ .hero-portrait .portrait-footer{font-size:.58rem}
+ .about-layout{display:block}
  .about-aside{padding:22px;grid-template-columns:1fr}
  .approach-grid{grid-template-columns:1fr;gap:0}
  .approach{border-right:0;border-bottom:1px solid var(--line);padding:14px 0}
@@ -192,9 +188,8 @@ h3{font-size:1.28rem;line-height:1.25;letter-spacing:-.027em;margin:0 0 11px}
 @media(max-height:710px) and (min-width:821px){
  .chapter{padding-top:calc(var(--head) + 35px);padding-bottom:60px}
  h1{font-size:clamp(3rem,5.7vw,5.5rem)}h2{font-size:clamp(2.6rem,4.4vw,4.6rem)}
- .visual{min-height:355px}
- .about-photo{width:min(100%,285px)}
- .portrait-placeholder{aspect-ratio:4/3.2}
+ .hero-portrait{width:min(100%,285px)}
+ .hero-portrait .portrait-placeholder{aspect-ratio:4/3.7}
  .about-aside{margin-top:16px;padding:16px 22px}
  .approach h3{font-size:.94rem}
  .approach p{font-size:.75rem}
@@ -229,16 +224,14 @@ h3{font-size:1.28rem;line-height:1.25;letter-spacing:-.027em;margin:0 0 11px}
    <div class="ctas"><a class="btn btn-primary" href="#projects">Explore selected work <span aria-hidden="true">↗</span></a><a class="btn btn-outline" href="resume.html">View full résumé <span aria-hidden="true">↗</span></a></div>
    <div class="hero-footer">Mexico · Finance & strategy</div>
   </div>
-  <div class="visual" aria-hidden="true">
-   <div class="visual-card">
-    <div class="visual-top"><span class="visual-title">An analytical approach</span><span class="visual-pills"><i></i><i></i><i></i></span></div>
-    <div class="visual-main">
-     <div class="v-step"><span>01 /</span><strong>Evaluate</strong></div>
-     <div class="v-step"><span>02 /</span><strong>Finance</strong></div>
-     <div class="v-step"><span>03 /</span><strong>Improve</strong></div>
+  <div class="hero-portrait">
+   <div class="portrait-placeholder" role="img" aria-label="Reserved space for José Aarón Lozano Campos's professional photograph">
+    <div class="portrait-center">
+     <svg viewBox="0 0 100 100" aria-hidden="true" focusable="false"><circle cx="50" cy="30" r="17"/><path d="M19 90c0-20 13-33 31-33s31 13 31 33"/></svg>
+     <span>Professional photograph</span>
     </div>
-    <div class="visual-bottom"><span>Evidence → judgment → action</span><span class="visual-tag">Systems thinking</span></div>
    </div>
+   <div class="portrait-footer"><span>Portrait placement</span><span>Image to be added</span></div>
   </div>
  </div>
  <span class="chapter-footer">01 / Home</span><a href="#about" class="chapter-next">Scroll to explore ↓</a>
@@ -252,15 +245,6 @@ h3{font-size:1.28rem;line-height:1.25;letter-spacing:-.027em;margin:0 0 11px}
    <p class="lead">My background combines sustainable investment assessment, financial analysis, business-process improvement and hands-on operating work. I have supported venture evaluation, worked with SMEs on financial visibility, and built tools for more structured decision-making.</p>
    <p class="lead">I am working toward a broader finance-and-strategy career: understanding businesses, evaluating opportunities, helping allocate resources, and supporting their development—especially in sectors shaping the energy transition.</p>
    <div class="focus-tags" aria-label="Professional areas"><span class="tag">Strategic finance</span><span class="tag">Investment readiness</span><span class="tag">Sustainable finance</span><span class="tag">Business systems</span></div>
-   </div>
-   <div class="about-photo">
-    <div class="portrait-placeholder" role="img" aria-label="Reserved space for José Aarón Lozano Campos's professional portrait">
-     <div class="portrait-center">
-      <svg viewBox="0 0 100 100" aria-hidden="true" focusable="false"><circle cx="50" cy="30" r="17"/><path d="M19 90c0-20 13-33 31-33s31 13 31 33"/></svg>
-      <span>Professional portrait</span>
-     </div>
-    </div>
-    <div class="portrait-footer"><span>Photo placement</span><span>Image to be added</span></div>
    </div>
   </div>
   <div class="about-aside" aria-label="How I approach business problems">
