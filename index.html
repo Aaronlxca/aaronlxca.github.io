@@ -240,6 +240,29 @@ html.cascade-enabled .side-dots:before{content:"";position:absolute;width:1px;to
  .proj-body{padding:17px}
  .proj h3{font-size:1.16rem}
 }
+
+/* Keep chapter controls in document flow: footers must never overlay biography or cards. */
+.chapter{flex-direction:column;justify-content:flex-start;align-items:stretch;padding-bottom:28px}
+.chapter>.wrap{margin-block:auto}
+.chapter-tools{width:min(1190px,calc(100% - 88px));display:flex;align-items:center;justify-content:space-between;gap:16px;flex:0 0 auto;margin:18px auto 0}
+.chapter-tools .chapter-footer,.chapter-tools .chapter-next{position:static;left:auto;right:auto;bottom:auto;margin:0}
+.chapter-tools .chapter-footer{flex:1;min-width:0;opacity:1;line-height:1.45;color:#52676b}
+.chapter-tools .chapter-next{flex:0 0 auto}
+.dark .chapter-footer,.ink .chapter-footer{color:#c5dcd6}
+.green .chapter-footer{color:#dfede5}
+.light .chapter-footer,.mist .chapter-footer,.paper .chapter-footer{color:#52676b}
+html.cascade-enabled .chapter{align-items:stretch}
+.chapter h1:focus-visible,.chapter h2:focus-visible{outline:3px solid var(--green);outline-offset:7px}
+.dark h1:focus-visible,.ink h2:focus-visible,.green h2:focus-visible{outline-color:var(--lime)}
+@media(max-width:820px){
+ .chapter-tools{width:calc(100% - 46px)}
+ .chapter{padding-bottom:25px}
+}
+@media(max-width:620px){
+ .chapter-tools{gap:10px}
+ .chapter-tools .chapter-footer{font-size:.74rem;letter-spacing:.07em}
+ .chapter-tools .chapter-next{display:inline-flex;min-height:44px;align-items:center;padding:10px 12px;font-size:.75rem;letter-spacing:.035em}
+}
 @media(prefers-reduced-motion:reduce){
  html{scroll-behavior:auto;scroll-snap-type:none}
  .mobile-progress,html.mobile-cascade .chapter>.wrap{transition:none}
@@ -282,7 +305,7 @@ html.cascade-enabled .side-dots:before{content:"";position:absolute;width:1px;to
    <div class="portrait-footer"><span>Portrait placement</span><span>Image to be added</span></div>
   </div>
  </div>
- <span class="chapter-footer">01 / Home</span><a href="#about" class="chapter-next" aria-label="Next chapter: About">Next: About ↓</a>
+ <div class="chapter-tools"><span class="chapter-footer">01 / Home</span><a href="#about" class="chapter-next" aria-label="Next chapter: About">Next: About ↓</a></div>
 </section>
 <section class="chapter light" id="about" aria-labelledby="about-heading">
  <div class="wrap about-layout">
@@ -303,7 +326,7 @@ html.cascade-enabled .side-dots:before{content:"";position:absolute;width:1px;to
    </div>
   </aside>
  </div>
- <span class="chapter-footer">02 / About</span><a href="#experience" class="chapter-next" aria-label="Next chapter: Experience">Next: Experience ↓</a>
+ <div class="chapter-tools"><span class="chapter-footer">02 / About</span><a href="#experience" class="chapter-next" aria-label="Next chapter: Experience">Next: Experience ↓</a></div>
 </section>
 <section class="chapter green" id="experience" aria-labelledby="experience-heading">
  <div class="wrap experience-grid">
@@ -321,7 +344,7 @@ html.cascade-enabled .side-dots:before{content:"";position:absolute;width:1px;to
    <article class="exp-item"><span class="exp-date">2020–2021</span><div><h3>SVX Mexico</h3><p class="role">Fellow · Research & Investor Relations Support</p><p>Contributed to financial reviews, research, and early Navigator development.</p></div></article>
   </div>
  </div>
- <span class="chapter-footer">03 / Experience</span><a href="#projects" class="chapter-next" aria-label="Next chapter: Projects">Next: Projects ↓</a>
+ <div class="chapter-tools"><span class="chapter-footer">03 / Experience</span><a href="#projects" class="chapter-next" aria-label="Next chapter: Projects">Next: Projects ↓</a></div>
 </section>
 <section class="chapter paper" id="projects" aria-labelledby="projects-heading">
  <div class="wrap">
@@ -342,7 +365,7 @@ html.cascade-enabled .side-dots:before{content:"";position:absolute;width:1px;to
   </div>
   <p class="projects-note">Independent initiatives, including a future business-assessment experience, will be connected when their public-facing materials are validated.</p>
  </div>
- <span class="chapter-footer">04 / Projects</span><a href="#resources" class="chapter-next" aria-label="Next chapter: Resources">Next: Resources ↓</a>
+ <div class="chapter-tools"><span class="chapter-footer">04 / Projects</span><a href="#resources" class="chapter-next" aria-label="Next chapter: Resources">Next: Resources ↓</a></div>
 </section>
 <section class="chapter mist" id="resources" aria-labelledby="resources-heading">
  <div class="wrap">
@@ -353,7 +376,7 @@ html.cascade-enabled .side-dots:before{content:"";position:absolute;width:1px;to
    <div class="resource soon"><span class="label">Original material · Planned</span><span class="symbol" aria-hidden="true">◇</span><h3>Models, notes & guides</h3><p>A place for reviewed financial models, explanatory articles and analytical templates as these become suitable for public release.</p><span class="resource-link">Not yet published</span></div>
   </div>
  </div>
- <span class="chapter-footer">05 / Resources</span><a href="#contact" class="chapter-next" aria-label="Next chapter: Contact">Next: Contact ↓</a>
+ <div class="chapter-tools"><span class="chapter-footer">05 / Resources</span><a href="#contact" class="chapter-next" aria-label="Next chapter: Contact">Next: Contact ↓</a></div>
 </section>
 <section class="chapter ink" id="contact" aria-labelledby="contact-heading">
  <div class="wrap connect-layout">
@@ -373,7 +396,7 @@ html.cascade-enabled .side-dots:before{content:"";position:absolute;width:1px;to
    </div>
   </div>
  </div>
- <span class="chapter-footer">06 / Contact · © <span id="year">2026</span> José Aarón Lozano Campos</span>
+ <div class="chapter-tools"><span class="chapter-footer">06 / Contact · © <span id="year">2026</span> José Aarón Lozano Campos</span></div>
 </section>
 </main>
 <script>
@@ -384,6 +407,8 @@ html.cascade-enabled .side-dots:before{content:"";position:absolute;width:1px;to
   var navLinks=Array.from(document.querySelectorAll('.navigation a[href^="#"],.side-dots a[href^="#"]'));
   var menu=document.getElementById('nav'),toggle=document.getElementById('menu-toggle');
   var year=document.getElementById('year');if(year)year.textContent=new Date().getFullYear();
+  var headings=chapters.map(function(c){var h=c.querySelector('h1,h2');if(h)h.tabIndex=-1;return h;});
+  function focusChapter(i){if(headings[i])headings[i].focus({preventScroll:true});}
   function closeMenu(){menu.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.textContent='Menu ☰';}
   toggle.addEventListener('click',function(){var open=menu.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));toggle.textContent=open?'Close ×':'Menu ☰';});
   menu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',closeMenu);});
@@ -442,7 +467,7 @@ html.cascade-enabled .side-dots:before{content:"";position:absolute;width:1px;to
     if(!deck){chapters[i].scrollIntoView({behavior:'smooth',block:'start'});return;}
     var old=active;
     markActive(i);
-    if(i!==old){
+    if(i!==old||direction===0){
       if(direction<0)chapters[i].scrollTop=Math.max(0,chapters[i].scrollHeight-chapters[i].clientHeight);
       else chapters[i].scrollTop=0;
     }
@@ -471,7 +496,7 @@ html.cascade-enabled .side-dots:before{content:"";position:absolute;width:1px;to
     if(Math.abs(accum)>=60)go(active+(amount>0?1:-1),'replace',amount>0?1:-1);
   },{passive:false});
   document.addEventListener('keydown',function(e){
-    if(e.key==='Escape'){closeMenu();return;}
+    if(e.key==='Escape'){var wasOpen=menu.classList.contains('open');closeMenu();if(wasOpen)toggle.focus({preventScroll:true});return;}
     if(!deck||e.altKey||e.ctrlKey||e.metaKey||e.shiftKey)return;
     var target=e.target;
     if(target.closest('input,textarea,select,button,a,summary,[contenteditable="true"]'))return;
@@ -484,14 +509,32 @@ html.cascade-enabled .side-dots:before{content:"";position:absolute;width:1px;to
   document.querySelectorAll('a[href^="#"]').forEach(function(a){
     a.addEventListener('click',function(e){
       var index=chapters.findIndex(function(c){return '#'+c.id===a.getAttribute('href');});
-      if(index<0||!deck||e.button!==0||e.ctrlKey||e.metaKey||e.altKey)return;
+      if(index<0||e.button!==0||e.ctrlKey||e.metaKey||e.altKey||e.shiftKey)return;
+      if(a.classList.contains('skip')){
+        e.preventDefault();
+        if(deck)go(0,'none',0);
+        else chapters[0].scrollIntoView({behavior:'auto',block:'start'});
+        focusChapter(0);
+        return;
+      }
       e.preventDefault();
-      go(index,'push',0);
+      if(deck)go(index,'push',0);
+      else{
+        chapters[index].scrollIntoView({behavior:reduceMotion.matches?'instant':'smooth',block:'start'});
+        if(window.location.hash!=='#'+chapters[index].id)history.pushState(null,'','#'+chapters[index].id);
+      }
+      focusChapter(index);
     });
   });
   window.addEventListener('popstate',function(){
     var i=indexForHash();
-    if(i>=0){if(deck)go(i,'none',0);else chapters[i].scrollIntoView({behavior:'auto'});}
+    if(i<0&&!window.location.hash)i=0;
+    if(i>=0){
+      if(deck)go(i,'none',0);
+      else chapters[i].scrollIntoView({behavior:'instant',block:'start'});
+      // Let browser history restore its state before restoring destination focus.
+      requestAnimationFrame(function(){focusChapter(i);});
+    }
   });
   function refresh(){
     if(resizeQueued)return;

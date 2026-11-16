@@ -1,0 +1,1843 @@
+{
+  "initial": {
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "classes": "cascade-enabled cascade-ready",
+    "documentWidth": 1440,
+    "focused": "<body>\n<a class=\"skip\" href=\"#home\">Skip to content</a>\n<header class=\"top\">\n <div class=\"top-inner wrap\">\n  <a href=\"#home\" class=\"logo\" aria-label=\"Aaron Lozano, home\">aaron<span>.</span>lozano</a>\n  <button type=\"button\" class=\"menu-toggle\" id=\"menu-toggle\" aria-controls=\"nav\" aria-expanded=\"fals",
+    "chapters": [
+      {
+        "id": "home",
+        "top": 0,
+        "bottom": 900,
+        "height": 900,
+        "scrollHeight": 900,
+        "clientHeight": 900,
+        "scrollTop": 0,
+        "contentTop": 195.71875,
+        "contentBottom": 760.28125,
+        "footerTop": 847.65625,
+        "footerBottom": 864.34375,
+        "inert": false,
+        "visible": true
+      },
+      {
+        "id": "about",
+        "top": 900,
+        "bottom": 1800,
+        "height": 900,
+        "scrollHeight": 964,
+        "clientHeight": 900,
+        "scrollTop": 0,
+        "contentTop": 1068.5135498046875,
+        "contentBottom": 1811.7364501953125,
+        "footerTop": 1811.90625,
+        "footerBottom": 1828.59375,
+        "inert": true,
+        "visible": false
+      },
+      {
+        "id": "experience",
+        "top": 1800,
+        "bottom": 2700,
+        "height": 900,
+        "scrollHeight": 900,
+        "clientHeight": 900,
+        "scrollTop": 0,
+        "contentTop": 2006.44384765625,
+        "contentBottom": 2609.55615234375,
+        "footerTop": 2647.65625,
+        "footerBottom": 2664.34375,
+        "inert": true,
+        "visible": false
+      },
+      {
+        "id": "projects",
+        "top": 2700,
+        "bottom": 3600,
+        "height": 900,
+        "scrollHeight": 900,
+        "clientHeight": 900,
+        "scrollTop": 0,
+        "contentTop": 2885.047607421875,
+        "contentBottom": 3530.95263671875,
+        "footerTop": 3547.65625,
+        "footerBottom": 3564.34375,
+        "inert": true,
+        "visible": false
+      },
+      {
+        "id": "resources",
+        "top": 3600,
+        "bottom": 4500,
+        "height": 900,
+        "scrollHeight": 900,
+        "clientHeight": 900,
+        "scrollTop": 0,
+        "contentTop": 3867.869873046875,
+        "contentBottom": 4348.14599609375,
+        "footerTop": 4447.65625,
+        "footerBottom": 4464.34375,
+        "inert": true,
+        "visible": false
+      },
+      {
+        "id": "contact",
+        "top": 4500,
+        "bottom": 5400,
+        "height": 900,
+        "scrollHeight": 900,
+        "clientHeight": 900,
+        "scrollTop": 0,
+        "contentTop": 4822.857421875,
+        "contentBottom": 5208.455078125,
+        "footerTop": 5355.3125,
+        "footerBottom": 5372,
+        "inert": true,
+        "visible": false
+      }
+    ],
+    "type": [
+      {
+        "text": "Using business & technologyfor social & environmental impact.",
+        "font": "Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "size": "49.95px",
+        "weight": "790",
+        "lineHeight": "53.946px",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "I work across finance, business strategy and technology—evaluating opp",
+        "font": "Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "size": "18.72px",
+        "weight": "400",
+        "lineHeight": "32.76px",
+        "color": "rgb(197, 220, 214)"
+      }
+    ]
+  },
+  "wheel": {
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "classes": "cascade-enabled cascade-ready",
+    "documentWidth": 1440,
+    "focused": "<body>\n<a class=\"skip\" href=\"#home\">Skip to content</a>\n<header class=\"top\">\n <div class=\"top-inner wrap\">\n  <a href=\"#home\" class=\"logo\" aria-label=\"Aaron Lozano, home\">aaron<span>.</span>lozano</a>\n  <button type=\"button\" class=\"menu-toggle\" id=\"menu-toggle\" aria-controls=\"nav\" aria-expanded=\"fals",
+    "chapters": [
+      {
+        "id": "home",
+        "top": -900,
+        "bottom": 0,
+        "height": 900,
+        "scrollHeight": 900,
+        "clientHeight": 900,
+        "scrollTop": 0,
+        "contentTop": -670.8938598632812,
+        "contentBottom": -113.10614013671875,
+        "footerTop": -52.34375,
+        "footerBottom": -35.65625,
+        "inert": true,
+        "visible": true
+      },
+      {
+        "id": "about",
+        "top": 0,
+        "bottom": 900,
+        "height": 900,
+        "scrollHeight": 964,
+        "clientHeight": 900,
+        "scrollTop": 0,
+        "contentTop": 134,
+        "contentBottom": 886.25,
+        "footerTop": 911.90625,
+        "footerBottom": 928.59375,
+        "inert": false,
+        "visible": true
+      },
+      {
+        "id": "experience",
+        "top": 900,
+        "bottom": 1800,
+        "height": 900,
+        "scrollHeight": 900,
+        "clientHeight": 900,
+        "scrollTop": 0,
+        "contentTop": 1106.44384765625,
+        "contentBottom": 1709.55615234375,
+        "footerTop": 1747.65625,
+        "footerBottom": 1764.34375,
+        "inert": true,
+        "visible": false
+      },
+      {
+        "id": "projects",
+        "top": 1800,
+        "bottom": 2700,
+        "height": 900,
+        "scrollHeight": 900,
+        "clientHeight": 900,
+        "scrollTop": 0,
+        "contentTop": 1985.0474853515625,
+        "contentBottom": 2630.95263671875,
+        "footerTop": 2647.65625,
+        "footerBottom": 2664.34375,
+        "inert": true,
+        "visible": false
+      },
+      {
+        "id": "resources",
+        "top": 2700,
+        "bottom": 3600,
+        "height": 900,
+        "scrollHeight": 900,
+        "clientHeight": 900,
+        "scrollTop": 0,
+        "contentTop": 2967.869873046875,
+        "contentBottom": 3448.14599609375,
+        "footerTop": 3547.65625,
+        "footerBottom": 3564.34375,
+        "inert": true,
+        "visible": false
+      },
+      {
+        "id": "contact",
+        "top": 3600,
+        "bottom": 4500,
+        "height": 900,
+        "scrollHeight": 900,
+        "clientHeight": 900,
+        "scrollTop": 0,
+        "contentTop": 3922.857421875,
+        "contentBottom": 4308.455078125,
+        "footerTop": 4455.3125,
+        "footerBottom": 4472,
+        "inert": true,
+        "visible": false
+      }
+    ],
+    "type": [
+      {
+        "text": "I like figuring out how things fit together.",
+        "font": "Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "size": "41.4px",
+        "weight": "765",
+        "lineHeight": "46.368px",
+        "color": "rgb(21, 46, 52)"
+      },
+      {
+        "text": "My journey into finance began with curiosity. While exploring entrepre",
+        "font": "Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "size": "16.8px",
+        "weight": "400",
+        "lineHeight": "27.888px",
+        "color": "rgb(82, 103, 107)"
+      },
+      {
+        "text": "My perspective changed while developing La Camelia, a university ventu",
+        "font": "Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "size": "16.8px",
+        "weight": "400",
+        "lineHeight": "27.888px",
+        "color": "rgb(82, 103, 107)"
+      },
+      {
+        "text": "Today, I approach problems as interconnected systems. I enjoy breaking",
+        "font": "Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "size": "16.8px",
+        "weight": "400",
+        "lineHeight": "27.888px",
+        "color": "rgb(82, 103, 107)"
+      },
+      {
+        "text": "I'm particularly interested in where finance and technology can create",
+        "font": "Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "size": "16.8px",
+        "weight": "400",
+        "lineHeight": "27.888px",
+        "color": "rgb(82, 103, 107)"
+      }
+    ]
+  },
+  "focusAfterNavigationAndTab": {
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "classes": "cascade-enabled cascade-ready",
+    "documentWidth": 1440,
+    "focused": "<a class=\"btn btn-primary\" href=\"#projects\">Explore my work <span aria-hidden=\"true\">↗</span></a>",
+    "chapters": [
+      {
+        "id": "home",
+        "top": 0,
+        "bottom": 900,
+        "height": 900,
+        "scrollHeight": 900,
+        "clientHeight": 900,
+        "scrollTop": 0,
+        "contentTop": 195.71875,
+        "contentBottom": 760.28125,
+        "footerTop": 847.65625,
+        "footerBottom": 864.34375,
+        "inert": false,
+        "visible": true
+      },
+      {
+        "id": "about",
+        "top": 900,
+        "bottom": 1800,
+        "height": 900,
+        "scrollHeight": 964,
+        "clientHeight": 900,
+        "scrollTop": 0,
+        "contentTop": 1068.5135498046875,
+        "contentBottom": 1811.7364501953125,
+        "footerTop": 1811.90625,
+        "footerBottom": 1828.59375,
+        "inert": true,
+        "visible": false
+      },
+      {
+        "id": "experience",
+        "top": 1800,
+        "bottom": 2700,
+        "height": 900,
+        "scrollHeight": 900,
+        "clientHeight": 900,
+        "scrollTop": 0,
+        "contentTop": 2006.44384765625,
+        "contentBottom": 2609.55615234375,
+        "footerTop": 2647.65625,
+        "footerBottom": 2664.34375,
+        "inert": true,
+        "visible": false
+      },
+      {
+        "id": "projects",
+        "top": 2700,
+        "bottom": 3600,
+        "height": 900,
+        "scrollHeight": 900,
+        "clientHeight": 900,
+        "scrollTop": 0,
+        "contentTop": 2885.047607421875,
+        "contentBottom": 3530.95263671875,
+        "footerTop": 3547.65625,
+        "footerBottom": 3564.34375,
+        "inert": true,
+        "visible": false
+      },
+      {
+        "id": "resources",
+        "top": 3600,
+        "bottom": 4500,
+        "height": 900,
+        "scrollHeight": 900,
+        "clientHeight": 900,
+        "scrollTop": 0,
+        "contentTop": 3867.869873046875,
+        "contentBottom": 4348.14599609375,
+        "footerTop": 4447.65625,
+        "footerBottom": 4464.34375,
+        "inert": true,
+        "visible": false
+      },
+      {
+        "id": "contact",
+        "top": 4500,
+        "bottom": 5400,
+        "height": 900,
+        "scrollHeight": 900,
+        "clientHeight": 900,
+        "scrollTop": 0,
+        "contentTop": 4822.857421875,
+        "contentBottom": 5208.455078125,
+        "footerTop": 5355.3125,
+        "footerBottom": 5372,
+        "inert": true,
+        "visible": false
+      }
+    ],
+    "type": [
+      {
+        "text": "Using business & technologyfor social & environmental impact.",
+        "font": "Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "size": "49.95px",
+        "weight": "790",
+        "lineHeight": "53.946px",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "I work across finance, business strategy and technology—evaluating opp",
+        "font": "Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "size": "18.72px",
+        "weight": "400",
+        "lineHeight": "32.76px",
+        "color": "rgb(197, 220, 214)"
+      }
+    ]
+  },
+  "skipThenTab": {
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "classes": "cascade-enabled cascade-ready",
+    "documentWidth": 1440,
+    "focused": "<a class=\"btn btn-primary\" href=\"#projects\">Explore my work <span aria-hidden=\"true\">↗</span></a>",
+    "chapters": [
+      {
+        "id": "home",
+        "top": 0,
+        "bottom": 900,
+        "height": 900,
+        "scrollHeight": 900,
+        "clientHeight": 900,
+        "scrollTop": 0,
+        "contentTop": 195.71875,
+        "contentBottom": 760.28125,
+        "footerTop": 847.65625,
+        "footerBottom": 864.34375,
+        "inert": false,
+        "visible": true
+      },
+      {
+        "id": "about",
+        "top": 900,
+        "bottom": 1800,
+        "height": 900,
+        "scrollHeight": 964,
+        "clientHeight": 900,
+        "scrollTop": 0,
+        "contentTop": 1068.5135498046875,
+        "contentBottom": 1811.7364501953125,
+        "footerTop": 1811.90625,
+        "footerBottom": 1828.59375,
+        "inert": true,
+        "visible": false
+      },
+      {
+        "id": "experience",
+        "top": 1800,
+        "bottom": 2700,
+        "height": 900,
+        "scrollHeight": 900,
+        "clientHeight": 900,
+        "scrollTop": 0,
+        "contentTop": 2006.44384765625,
+        "contentBottom": 2609.55615234375,
+        "footerTop": 2647.65625,
+        "footerBottom": 2664.34375,
+        "inert": true,
+        "visible": false
+      },
+      {
+        "id": "projects",
+        "top": 2700,
+        "bottom": 3600,
+        "height": 900,
+        "scrollHeight": 900,
+        "clientHeight": 900,
+        "scrollTop": 0,
+        "contentTop": 2885.047607421875,
+        "contentBottom": 3530.95263671875,
+        "footerTop": 3547.65625,
+        "footerBottom": 3564.34375,
+        "inert": true,
+        "visible": false
+      },
+      {
+        "id": "resources",
+        "top": 3600,
+        "bottom": 4500,
+        "height": 900,
+        "scrollHeight": 900,
+        "clientHeight": 900,
+        "scrollTop": 0,
+        "contentTop": 3867.869873046875,
+        "contentBottom": 4348.14599609375,
+        "footerTop": 4447.65625,
+        "footerBottom": 4464.34375,
+        "inert": true,
+        "visible": false
+      },
+      {
+        "id": "contact",
+        "top": 4500,
+        "bottom": 5400,
+        "height": 900,
+        "scrollHeight": 900,
+        "clientHeight": 900,
+        "scrollTop": 0,
+        "contentTop": 4822.857421875,
+        "contentBottom": 5208.455078125,
+        "footerTop": 5355.3125,
+        "footerBottom": 5372,
+        "inert": true,
+        "visible": false
+      }
+    ],
+    "type": [
+      {
+        "text": "Using business & technologyfor social & environmental impact.",
+        "font": "Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "size": "49.95px",
+        "weight": "790",
+        "lineHeight": "53.946px",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "I work across finance, business strategy and technology—evaluating opp",
+        "font": "Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "size": "18.72px",
+        "weight": "400",
+        "lineHeight": "32.76px",
+        "color": "rgb(197, 220, 214)"
+      }
+    ]
+  },
+  "pageDown": {
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "classes": "cascade-enabled cascade-ready",
+    "documentWidth": 1440,
+    "focused": "<body>\n<a class=\"skip\" href=\"#home\">Skip to content</a>\n<header class=\"top\">\n <div class=\"top-inner wrap\">\n  <a href=\"#home\" class=\"logo\" aria-label=\"Aaron Lozano, home\">aaron<span>.</span>lozano</a>\n  <button type=\"button\" class=\"menu-toggle\" id=\"menu-toggle\" aria-controls=\"nav\" aria-expanded=\"fals",
+    "chapters": [
+      {
+        "id": "home",
+        "top": -900,
+        "bottom": 0,
+        "height": 900,
+        "scrollHeight": 900,
+        "clientHeight": 900,
+        "scrollTop": 0,
+        "contentTop": -670.8938598632812,
+        "contentBottom": -113.10614013671875,
+        "footerTop": -52.34375,
+        "footerBottom": -35.65625,
+        "inert": true,
+        "visible": true
+      },
+      {
+        "id": "about",
+        "top": 0,
+        "bottom": 900,
+        "height": 900,
+        "scrollHeight": 964,
+        "clientHeight": 900,
+        "scrollTop": 0,
+        "contentTop": 134,
+        "contentBottom": 886.25,
+        "footerTop": 911.90625,
+        "footerBottom": 928.59375,
+        "inert": false,
+        "visible": true
+      },
+      {
+        "id": "experience",
+        "top": 900,
+        "bottom": 1800,
+        "height": 900,
+        "scrollHeight": 900,
+        "clientHeight": 900,
+        "scrollTop": 0,
+        "contentTop": 1106.44384765625,
+        "contentBottom": 1709.55615234375,
+        "footerTop": 1747.65625,
+        "footerBottom": 1764.34375,
+        "inert": true,
+        "visible": false
+      },
+      {
+        "id": "projects",
+        "top": 1800,
+        "bottom": 2700,
+        "height": 900,
+        "scrollHeight": 900,
+        "clientHeight": 900,
+        "scrollTop": 0,
+        "contentTop": 1985.0474853515625,
+        "contentBottom": 2630.95263671875,
+        "footerTop": 2647.65625,
+        "footerBottom": 2664.34375,
+        "inert": true,
+        "visible": false
+      },
+      {
+        "id": "resources",
+        "top": 2700,
+        "bottom": 3600,
+        "height": 900,
+        "scrollHeight": 900,
+        "clientHeight": 900,
+        "scrollTop": 0,
+        "contentTop": 2967.869873046875,
+        "contentBottom": 3448.14599609375,
+        "footerTop": 3547.65625,
+        "footerBottom": 3564.34375,
+        "inert": true,
+        "visible": false
+      },
+      {
+        "id": "contact",
+        "top": 3600,
+        "bottom": 4500,
+        "height": 900,
+        "scrollHeight": 900,
+        "clientHeight": 900,
+        "scrollTop": 0,
+        "contentTop": 3922.857421875,
+        "contentBottom": 4308.455078125,
+        "footerTop": 4455.3125,
+        "footerBottom": 4472,
+        "inert": true,
+        "visible": false
+      }
+    ],
+    "type": [
+      {
+        "text": "I like figuring out how things fit together.",
+        "font": "Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "size": "41.4px",
+        "weight": "765",
+        "lineHeight": "46.368px",
+        "color": "rgb(21, 46, 52)"
+      },
+      {
+        "text": "My journey into finance began with curiosity. While exploring entrepre",
+        "font": "Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "size": "16.8px",
+        "weight": "400",
+        "lineHeight": "27.888px",
+        "color": "rgb(82, 103, 107)"
+      },
+      {
+        "text": "My perspective changed while developing La Camelia, a university ventu",
+        "font": "Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "size": "16.8px",
+        "weight": "400",
+        "lineHeight": "27.888px",
+        "color": "rgb(82, 103, 107)"
+      },
+      {
+        "text": "Today, I approach problems as interconnected systems. I enjoy breaking",
+        "font": "Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "size": "16.8px",
+        "weight": "400",
+        "lineHeight": "27.888px",
+        "color": "rgb(82, 103, 107)"
+      },
+      {
+        "text": "I'm particularly interested in where finance and technology can create",
+        "font": "Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "size": "16.8px",
+        "weight": "400",
+        "lineHeight": "27.888px",
+        "color": "rgb(82, 103, 107)"
+      }
+    ]
+  },
+  "history": {
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "classes": "cascade-enabled cascade-ready",
+    "documentWidth": 1440,
+    "focused": "<h2 id=\"projects-heading\" tabindex=\"-1\">Ideas into action.<br>Evidence into impact.</h2>",
+    "chapters": [
+      {
+        "id": "home",
+        "top": -2700,
+        "bottom": -1800,
+        "height": 900,
+        "scrollHeight": 900,
+        "clientHeight": 900,
+        "scrollTop": 0,
+        "contentTop": -2470.893798828125,
+        "contentBottom": -1913.106201171875,
+        "footerTop": -1852.34375,
+        "footerBottom": -1835.65625,
+        "inert": true,
+        "visible": false
+      },
+      {
+        "id": "about",
+        "top": -1800,
+        "bottom": -900,
+        "height": 900,
+        "scrollHeight": 964,
+        "clientHeight": 900,
+        "scrollTop": 0,
+        "contentTop": -1631.4864501953125,
+        "contentBottom": -888.2635498046875,
+        "footerTop": -888.09375,
+        "footerBottom": -871.40625,
+        "inert": true,
+        "visible": false
+      },
+      {
+        "id": "experience",
+        "top": -900,
+        "bottom": 0,
+        "height": 900,
+        "scrollHeight": 900,
+        "clientHeight": 900,
+        "scrollTop": 0,
+        "contentTop": -693.55615234375,
+        "contentBottom": -90.44384765625,
+        "footerTop": -52.34375,
+        "footerBottom": -35.65625,
+        "inert": true,
+        "visible": true
+      },
+      {
+        "id": "projects",
+        "top": 0,
+        "bottom": 900,
+        "height": 900,
+        "scrollHeight": 900,
+        "clientHeight": 900,
+        "scrollTop": 0,
+        "contentTop": 151.125,
+        "contentBottom": 804.875,
+        "footerTop": 847.65625,
+        "footerBottom": 864.34375,
+        "inert": false,
+        "visible": true
+      },
+      {
+        "id": "resources",
+        "top": 900,
+        "bottom": 1800,
+        "height": 900,
+        "scrollHeight": 900,
+        "clientHeight": 900,
+        "scrollTop": 0,
+        "contentTop": 1167.8697509765625,
+        "contentBottom": 1648.1458740234375,
+        "footerTop": 1747.65625,
+        "footerBottom": 1764.34375,
+        "inert": true,
+        "visible": false
+      },
+      {
+        "id": "contact",
+        "top": 1800,
+        "bottom": 2700,
+        "height": 900,
+        "scrollHeight": 900,
+        "clientHeight": 900,
+        "scrollTop": 0,
+        "contentTop": 2122.857421875,
+        "contentBottom": 2508.455078125,
+        "footerTop": 2655.3125,
+        "footerBottom": 2672,
+        "inert": true,
+        "visible": false
+      }
+    ],
+    "type": [
+      {
+        "text": "Ideas into action.Evidence into impact.",
+        "font": "Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "size": "43.2px",
+        "weight": "765",
+        "lineHeight": "48.384px",
+        "color": "rgb(21, 46, 52)"
+      },
+      {
+        "text": "Representative work and research, with the analytical question, contri",
+        "font": "Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "size": "18.72px",
+        "weight": "400",
+        "lineHeight": "32.76px",
+        "color": "rgb(82, 103, 107)"
+      }
+    ]
+  },
+  "reduced": {
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "classes": "",
+    "documentWidth": 1440,
+    "focused": "<h2 id=\"projects-heading\" tabindex=\"-1\">Ideas into action.<br>Evidence into impact.</h2>",
+    "chapters": [
+      {
+        "id": "home",
+        "top": -2764,
+        "bottom": -1864,
+        "height": 900,
+        "scrollHeight": 900,
+        "clientHeight": 900,
+        "scrollTop": 0,
+        "contentTop": -2568.28125,
+        "contentBottom": -2003.71875,
+        "footerTop": -1916.34375,
+        "footerBottom": -1899.65625,
+        "inert": false,
+        "visible": false
+      },
+      {
+        "id": "about",
+        "top": -1864,
+        "bottom": -899.75,
+        "height": 964.25,
+        "scrollHeight": 964,
+        "clientHeight": 964,
+        "scrollTop": 0,
+        "contentTop": -1730,
+        "contentBottom": -977.75,
+        "footerTop": -952.09375,
+        "footerBottom": -935.40625,
+        "inert": false,
+        "visible": false
+      },
+      {
+        "id": "experience",
+        "top": -899.75,
+        "bottom": 0.25,
+        "height": 900,
+        "scrollHeight": 900,
+        "clientHeight": 900,
+        "scrollTop": 0,
+        "contentTop": -726.96875,
+        "contentBottom": -116.53125,
+        "footerTop": -52.09375,
+        "footerBottom": -35.40625,
+        "inert": false,
+        "visible": true
+      },
+      {
+        "id": "projects",
+        "top": 0.25,
+        "bottom": 900.25,
+        "height": 900,
+        "scrollHeight": 900,
+        "clientHeight": 900,
+        "scrollTop": 0,
+        "contentTop": 151.375,
+        "contentBottom": 805.125,
+        "footerTop": 847.90625,
+        "footerBottom": 864.59375,
+        "inert": false,
+        "visible": true
+      },
+      {
+        "id": "resources",
+        "top": 900.25,
+        "bottom": 1800.25,
+        "height": 900,
+        "scrollHeight": 900,
+        "clientHeight": 900,
+        "scrollTop": 0,
+        "contentTop": 1135.203125,
+        "contentBottom": 1621.3125,
+        "footerTop": 1747.90625,
+        "footerBottom": 1764.59375,
+        "inert": false,
+        "visible": false
+      },
+      {
+        "id": "contact",
+        "top": 1800.25,
+        "bottom": 2700.25,
+        "height": 900,
+        "scrollHeight": 900,
+        "clientHeight": 900,
+        "scrollTop": 0,
+        "contentTop": 2090.765625,
+        "contentBottom": 2481.046875,
+        "footerTop": 2655.5625,
+        "footerBottom": 2672.25,
+        "inert": false,
+        "visible": false
+      }
+    ],
+    "type": [
+      {
+        "text": "Ideas into action.Evidence into impact.",
+        "font": "Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "size": "43.2px",
+        "weight": "765",
+        "lineHeight": "48.384px",
+        "color": "rgb(21, 46, 52)"
+      },
+      {
+        "text": "Representative work and research, with the analytical question, contri",
+        "font": "Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "size": "18.72px",
+        "weight": "400",
+        "lineHeight": "32.76px",
+        "color": "rgb(82, 103, 107)"
+      }
+    ]
+  },
+  "reducedAfter100ms": {
+    "before": 0,
+    "scrollY": 2764,
+    "target": 2764
+  },
+  "sizes": [
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "classes": "cascade-enabled cascade-ready",
+      "documentWidth": 1280,
+      "focused": "<h2 id=\"about-heading\" tabindex=\"-1\">I like figuring out how things fit together.</h2>",
+      "chapters": [
+        {
+          "id": "home",
+          "top": -720,
+          "bottom": 0,
+          "height": 720,
+          "scrollHeight": 720,
+          "clientHeight": 720,
+          "scrollTop": 0,
+          "contentTop": -543.5814208984375,
+          "contentBottom": -60.4185791015625,
+          "footerTop": -52.34375,
+          "footerBottom": -35.65625,
+          "inert": true,
+          "visible": true
+        },
+        {
+          "id": "about",
+          "top": 0,
+          "bottom": 720,
+          "height": 720,
+          "scrollHeight": 866,
+          "clientHeight": 720,
+          "scrollTop": 0,
+          "contentTop": 134,
+          "contentBottom": 788.09375,
+          "footerTop": 813.75,
+          "footerBottom": 830.4375,
+          "inert": false,
+          "visible": true
+        },
+        {
+          "id": "experience",
+          "top": 720,
+          "bottom": 1440,
+          "height": 720,
+          "scrollHeight": 803,
+          "clientHeight": 720,
+          "scrollTop": 0,
+          "contentTop": 887.5465698242188,
+          "contentBottom": 1471.547119140625,
+          "footerTop": 1470.75,
+          "footerBottom": 1487.4375,
+          "inert": true,
+          "visible": false
+        },
+        {
+          "id": "projects",
+          "top": 1440,
+          "bottom": 2160,
+          "height": 720,
+          "scrollHeight": 846,
+          "clientHeight": 720,
+          "scrollTop": 0,
+          "contentTop": 1607.806396484375,
+          "contentBottom": 2234.599853515625,
+          "footerTop": 2234.0625,
+          "footerBottom": 2250.75,
+          "inert": true,
+          "visible": false
+        },
+        {
+          "id": "resources",
+          "top": 2160,
+          "bottom": 2880,
+          "height": 720,
+          "scrollHeight": 720,
+          "clientHeight": 720,
+          "scrollTop": 0,
+          "contentTop": 2347.425537109375,
+          "contentBottom": 2808.590087890625,
+          "footerTop": 2827.65625,
+          "footerBottom": 2844.34375,
+          "inert": true,
+          "visible": false
+        },
+        {
+          "id": "contact",
+          "top": 2880,
+          "bottom": 3600,
+          "height": 720,
+          "scrollHeight": 720,
+          "clientHeight": 720,
+          "scrollTop": 0,
+          "contentTop": 3112.857421875,
+          "contentBottom": 3498.455078125,
+          "footerTop": 3555.3125,
+          "footerBottom": 3572,
+          "inert": true,
+          "visible": false
+        }
+      ],
+      "type": [
+        {
+          "text": "I like figuring out how things fit together.",
+          "font": "Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "size": "33.12px",
+          "weight": "765",
+          "lineHeight": "37.0944px",
+          "color": "rgb(21, 46, 52)"
+        },
+        {
+          "text": "My journey into finance began with curiosity. While exploring entrepre",
+          "font": "Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "size": "15.52px",
+          "weight": "400",
+          "lineHeight": "25.7632px",
+          "color": "rgb(82, 103, 107)"
+        },
+        {
+          "text": "My perspective changed while developing La Camelia, a university ventu",
+          "font": "Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "size": "15.52px",
+          "weight": "400",
+          "lineHeight": "25.7632px",
+          "color": "rgb(82, 103, 107)"
+        },
+        {
+          "text": "Today, I approach problems as interconnected systems. I enjoy breaking",
+          "font": "Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "size": "15.52px",
+          "weight": "400",
+          "lineHeight": "25.7632px",
+          "color": "rgb(82, 103, 107)"
+        },
+        {
+          "text": "I'm particularly interested in where finance and technology can create",
+          "font": "Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "size": "15.52px",
+          "weight": "400",
+          "lineHeight": "25.7632px",
+          "color": "rgb(82, 103, 107)"
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 1024,
+        "height": 768
+      },
+      "classes": "cascade-enabled cascade-ready",
+      "documentWidth": 1024,
+      "focused": "<h2 id=\"about-heading\" tabindex=\"-1\">I like figuring out how things fit together.</h2>",
+      "chapters": [
+        {
+          "id": "home",
+          "top": -768,
+          "bottom": 0,
+          "height": 768,
+          "scrollHeight": 768,
+          "clientHeight": 768,
+          "scrollTop": 0,
+          "contentTop": -582.586669921875,
+          "contentBottom": -69.413330078125,
+          "footerTop": -52.34375,
+          "footerBottom": -35.65625,
+          "inert": true,
+          "visible": true
+        },
+        {
+          "id": "about",
+          "top": 0,
+          "bottom": 768,
+          "height": 768,
+          "scrollHeight": 952,
+          "clientHeight": 768,
+          "scrollTop": 0,
+          "contentTop": 134,
+          "contentBottom": 873.59375,
+          "footerTop": 899.25,
+          "footerBottom": 915.9375,
+          "inert": false,
+          "visible": true
+        },
+        {
+          "id": "experience",
+          "top": 768,
+          "bottom": 1536,
+          "height": 768,
+          "scrollHeight": 824,
+          "clientHeight": 768,
+          "scrollTop": 0,
+          "contentTop": 935.673828125,
+          "contentBottom": 1540.623046875,
+          "footerTop": 1539.953125,
+          "footerBottom": 1556.640625,
+          "inert": true,
+          "visible": false
+        },
+        {
+          "id": "projects",
+          "top": 1536,
+          "bottom": 2304,
+          "height": 768,
+          "scrollHeight": 872,
+          "clientHeight": 768,
+          "scrollTop": 0,
+          "contentTop": 1703.9583740234375,
+          "contentBottom": 2355.77587890625,
+          "footerTop": 2355.390625,
+          "footerBottom": 2372.078125,
+          "inert": true,
+          "visible": false
+        },
+        {
+          "id": "resources",
+          "top": 2304,
+          "bottom": 3072,
+          "height": 768,
+          "scrollHeight": 768,
+          "clientHeight": 768,
+          "scrollTop": 0,
+          "contentTop": 2498.521484375,
+          "contentBottom": 2993.478515625,
+          "footerTop": 3019.65625,
+          "footerBottom": 3036.34375,
+          "inert": true,
+          "visible": false
+        },
+        {
+          "id": "contact",
+          "top": 3072,
+          "bottom": 3840,
+          "height": 768,
+          "scrollHeight": 768,
+          "clientHeight": 768,
+          "scrollTop": 0,
+          "contentTop": 3316.599853515625,
+          "contentBottom": 3726.71240234375,
+          "footerTop": 3795.3125,
+          "footerBottom": 3812,
+          "inert": true,
+          "visible": false
+        }
+      ],
+      "type": [
+        {
+          "text": "I like figuring out how things fit together.",
+          "font": "Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "size": "31.744px",
+          "weight": "765",
+          "lineHeight": "35.5533px",
+          "color": "rgb(21, 46, 52)"
+        },
+        {
+          "text": "My journey into finance began with curiosity. While exploring entrepre",
+          "font": "Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "size": "15.52px",
+          "weight": "400",
+          "lineHeight": "25.7632px",
+          "color": "rgb(82, 103, 107)"
+        },
+        {
+          "text": "My perspective changed while developing La Camelia, a university ventu",
+          "font": "Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "size": "15.52px",
+          "weight": "400",
+          "lineHeight": "25.7632px",
+          "color": "rgb(82, 103, 107)"
+        },
+        {
+          "text": "Today, I approach problems as interconnected systems. I enjoy breaking",
+          "font": "Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "size": "15.52px",
+          "weight": "400",
+          "lineHeight": "25.7632px",
+          "color": "rgb(82, 103, 107)"
+        },
+        {
+          "text": "I'm particularly interested in where finance and technology can create",
+          "font": "Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "size": "15.52px",
+          "weight": "400",
+          "lineHeight": "25.7632px",
+          "color": "rgb(82, 103, 107)"
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 821,
+        "height": 900
+      },
+      "classes": "cascade-enabled cascade-ready",
+      "documentWidth": 821,
+      "focused": "<h2 id=\"about-heading\" tabindex=\"-1\">I like figuring out how things fit together.</h2>",
+      "chapters": [
+        {
+          "id": "home",
+          "top": -900,
+          "bottom": 0,
+          "height": 900,
+          "scrollHeight": 900,
+          "clientHeight": 900,
+          "scrollTop": 0,
+          "contentTop": -649.2041015625,
+          "contentBottom": -134.7802734375,
+          "footerTop": -52.34375,
+          "footerBottom": -35.65625,
+          "inert": true,
+          "visible": true
+        },
+        {
+          "id": "about",
+          "top": 0,
+          "bottom": 900,
+          "height": 900,
+          "scrollHeight": 1131,
+          "clientHeight": 900,
+          "scrollTop": 0,
+          "contentTop": 134,
+          "contentBottom": 1052.625,
+          "footerTop": 1078.28125,
+          "footerBottom": 1094.96875,
+          "inert": false,
+          "visible": true
+        },
+        {
+          "id": "experience",
+          "top": 900,
+          "bottom": 1800,
+          "height": 900,
+          "scrollHeight": 925,
+          "clientHeight": 900,
+          "scrollTop": 0,
+          "contentTop": 1068.27587890625,
+          "contentBottom": 1772.36474609375,
+          "footerTop": 1772.296875,
+          "footerBottom": 1788.984375,
+          "inert": true,
+          "visible": false
+        },
+        {
+          "id": "projects",
+          "top": 1800,
+          "bottom": 2700,
+          "height": 900,
+          "scrollHeight": 969,
+          "clientHeight": 900,
+          "scrollTop": 0,
+          "contentTop": 1968.5447998046875,
+          "contentBottom": 2716.923828125,
+          "footerTop": 2717.125,
+          "footerBottom": 2733.8125,
+          "inert": true,
+          "visible": false
+        },
+        {
+          "id": "resources",
+          "top": 2700,
+          "bottom": 3600,
+          "height": 900,
+          "scrollHeight": 900,
+          "clientHeight": 900,
+          "scrollTop": 0,
+          "contentTop": 2904.853759765625,
+          "contentBottom": 3511.146240234375,
+          "footerTop": 3547.65625,
+          "footerBottom": 3564.34375,
+          "inert": true,
+          "visible": false
+        },
+        {
+          "id": "contact",
+          "top": 3600,
+          "bottom": 4500,
+          "height": 900,
+          "scrollHeight": 900,
+          "clientHeight": 900,
+          "scrollTop": 0,
+          "contentTop": 3886.085205078125,
+          "contentBottom": 4345.2275390625,
+          "footerTop": 4455.3125,
+          "footerBottom": 4472,
+          "inert": true,
+          "visible": false
+        }
+      ],
+      "type": [
+        {
+          "text": "I like figuring out how things fit together.",
+          "font": "Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "size": "31.2px",
+          "weight": "765",
+          "lineHeight": "34.944px",
+          "color": "rgb(21, 46, 52)"
+        },
+        {
+          "text": "My journey into finance began with curiosity. While exploring entrepre",
+          "font": "Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "size": "15.52px",
+          "weight": "400",
+          "lineHeight": "25.7632px",
+          "color": "rgb(82, 103, 107)"
+        },
+        {
+          "text": "My perspective changed while developing La Camelia, a university ventu",
+          "font": "Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "size": "15.52px",
+          "weight": "400",
+          "lineHeight": "25.7632px",
+          "color": "rgb(82, 103, 107)"
+        },
+        {
+          "text": "Today, I approach problems as interconnected systems. I enjoy breaking",
+          "font": "Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "size": "15.52px",
+          "weight": "400",
+          "lineHeight": "25.7632px",
+          "color": "rgb(82, 103, 107)"
+        },
+        {
+          "text": "I'm particularly interested in where finance and technology can create",
+          "font": "Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "size": "15.52px",
+          "weight": "400",
+          "lineHeight": "25.7632px",
+          "color": "rgb(82, 103, 107)"
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 820,
+        "height": 900
+      },
+      "classes": "mobile-cascade",
+      "documentWidth": 820,
+      "focused": "<h2 id=\"about-heading\" tabindex=\"-1\">I like figuring out how things fit together.</h2>",
+      "chapters": [
+        {
+          "id": "home",
+          "top": -984,
+          "bottom": -0.4375,
+          "height": 983.5625,
+          "scrollHeight": 984,
+          "clientHeight": 984,
+          "scrollTop": 0,
+          "contentTop": -846,
+          "contentBottom": -53.4375,
+          "footerTop": -49.78125,
+          "footerBottom": -33.09375,
+          "inert": false,
+          "visible": false
+        },
+        {
+          "id": "about",
+          "top": -0.4375,
+          "bottom": 1271.0625,
+          "height": 1271.5,
+          "scrollHeight": 1272,
+          "clientHeight": 1272,
+          "scrollTop": 0,
+          "contentTop": 115.5625,
+          "contentBottom": 1196.0625,
+          "footerTop": 1221.71875,
+          "footerBottom": 1238.40625,
+          "inert": false,
+          "visible": true
+        },
+        {
+          "id": "experience",
+          "top": 1271.0625,
+          "bottom": 2411.984375,
+          "height": 1140.921875,
+          "scrollHeight": 1141,
+          "clientHeight": 1141,
+          "scrollTop": 0,
+          "contentTop": 1409.0625,
+          "contentBottom": 2358.984375,
+          "footerTop": 2362.640625,
+          "footerBottom": 2379.328125,
+          "inert": false,
+          "visible": false
+        },
+        {
+          "id": "projects",
+          "top": 2411.984375,
+          "bottom": 3801.453125,
+          "height": 1389.46875,
+          "scrollHeight": 1389,
+          "clientHeight": 1389,
+          "scrollTop": 0,
+          "contentTop": 2549.984375,
+          "contentBottom": 3748.453125,
+          "footerTop": 3752.109375,
+          "footerBottom": 3768.796875,
+          "inert": false,
+          "visible": false
+        },
+        {
+          "id": "resources",
+          "top": 3801.453125,
+          "bottom": 4868.640625,
+          "height": 1067.1875,
+          "scrollHeight": 1067,
+          "clientHeight": 1067,
+          "scrollTop": 0,
+          "contentTop": 3939.453125,
+          "contentBottom": 4815.640625,
+          "footerTop": 4819.296875,
+          "footerBottom": 4835.984375,
+          "inert": false,
+          "visible": false
+        },
+        {
+          "id": "contact",
+          "top": 4868.640625,
+          "bottom": 5768.640625,
+          "height": 900,
+          "scrollHeight": 900,
+          "clientHeight": 900,
+          "scrollTop": 0,
+          "contentTop": 5042.453125,
+          "contentBottom": 5695.140625,
+          "footerTop": 5726.953125,
+          "footerBottom": 5743.640625,
+          "inert": false,
+          "visible": false
+        }
+      ],
+      "type": [
+        {
+          "text": "I like figuring out how things fit together.",
+          "font": "Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "size": "37.72px",
+          "weight": "765",
+          "lineHeight": "42.2464px",
+          "color": "rgb(21, 46, 52)"
+        },
+        {
+          "text": "My journey into finance began with curiosity. While exploring entrepre",
+          "font": "Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "size": "15.52px",
+          "weight": "400",
+          "lineHeight": "25.7632px",
+          "color": "rgb(82, 103, 107)"
+        },
+        {
+          "text": "My perspective changed while developing La Camelia, a university ventu",
+          "font": "Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "size": "15.52px",
+          "weight": "400",
+          "lineHeight": "25.7632px",
+          "color": "rgb(82, 103, 107)"
+        },
+        {
+          "text": "Today, I approach problems as interconnected systems. I enjoy breaking",
+          "font": "Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "size": "15.52px",
+          "weight": "400",
+          "lineHeight": "25.7632px",
+          "color": "rgb(82, 103, 107)"
+        },
+        {
+          "text": "I'm particularly interested in where finance and technology can create",
+          "font": "Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "size": "15.52px",
+          "weight": "400",
+          "lineHeight": "25.7632px",
+          "color": "rgb(82, 103, 107)"
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "classes": "mobile-cascade",
+      "documentWidth": 320,
+      "focused": "<h2 id=\"about-heading\" tabindex=\"-1\">I like figuring out how things fit together.</h2>",
+      "chapters": [
+        {
+          "id": "home",
+          "top": -1199,
+          "bottom": 0.359375,
+          "height": 1199.359375,
+          "scrollHeight": 1199,
+          "clientHeight": 1199,
+          "scrollTop": 0,
+          "contentTop": -1090,
+          "contentBottom": -86.640625,
+          "footerTop": -55.234375,
+          "footerBottom": -38.0625,
+          "inert": false,
+          "visible": true
+        },
+        {
+          "id": "about",
+          "top": 0.359375,
+          "bottom": 2049.53125,
+          "height": 2049.171875,
+          "scrollHeight": 2049,
+          "clientHeight": 2049,
+          "scrollTop": 0,
+          "contentTop": 109.359375,
+          "contentBottom": 1962.53125,
+          "footerTop": 1993.9375,
+          "footerBottom": 2011.109375,
+          "inert": false,
+          "visible": true
+        },
+        {
+          "id": "experience",
+          "top": 2049.53125,
+          "bottom": 3809.5,
+          "height": 1759.96875,
+          "scrollHeight": 1760,
+          "clientHeight": 1760,
+          "scrollTop": 0,
+          "contentTop": 2180.53125,
+          "contentBottom": 3744.5,
+          "footerTop": 3753.90625,
+          "footerBottom": 3771.078125,
+          "inert": false,
+          "visible": false
+        },
+        {
+          "id": "projects",
+          "top": 3809.5,
+          "bottom": 5756.390625,
+          "height": 1946.890625,
+          "scrollHeight": 1947,
+          "clientHeight": 1947,
+          "scrollTop": 0,
+          "contentTop": 3940.5,
+          "contentBottom": 5691.390625,
+          "footerTop": 5700.796875,
+          "footerBottom": 5717.96875,
+          "inert": false,
+          "visible": false
+        },
+        {
+          "id": "resources",
+          "top": 5756.390625,
+          "bottom": 7318.25,
+          "height": 1561.859375,
+          "scrollHeight": 1562,
+          "clientHeight": 1562,
+          "scrollTop": 0,
+          "contentTop": 5887.390625,
+          "contentBottom": 7253.25,
+          "footerTop": 7262.65625,
+          "footerBottom": 7279.828125,
+          "inert": false,
+          "visible": false
+        },
+        {
+          "id": "contact",
+          "top": 7318.25,
+          "bottom": 8313.34375,
+          "height": 995.09375,
+          "scrollHeight": 995,
+          "clientHeight": 995,
+          "scrollTop": 0,
+          "contentTop": 7449.25,
+          "contentBottom": 8258,
+          "footerTop": 8254,
+          "footerBottom": 8288.34375,
+          "inert": false,
+          "visible": false
+        }
+      ],
+      "type": [
+        {
+          "text": "I like figuring out how things fit together.",
+          "font": "Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "size": "29.6px",
+          "weight": "765",
+          "lineHeight": "33.152px",
+          "color": "rgb(21, 46, 52)"
+        },
+        {
+          "text": "My journey into finance began with curiosity. While exploring entrepre",
+          "font": "Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "size": "15.52px",
+          "weight": "400",
+          "lineHeight": "25.7632px",
+          "color": "rgb(82, 103, 107)"
+        },
+        {
+          "text": "My perspective changed while developing La Camelia, a university ventu",
+          "font": "Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "size": "15.52px",
+          "weight": "400",
+          "lineHeight": "25.7632px",
+          "color": "rgb(82, 103, 107)"
+        },
+        {
+          "text": "Today, I approach problems as interconnected systems. I enjoy breaking",
+          "font": "Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "size": "15.52px",
+          "weight": "400",
+          "lineHeight": "25.7632px",
+          "color": "rgb(82, 103, 107)"
+        },
+        {
+          "text": "I'm particularly interested in where finance and technology can create",
+          "font": "Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "size": "15.52px",
+          "weight": "400",
+          "lineHeight": "25.7632px",
+          "color": "rgb(82, 103, 107)"
+        }
+      ]
+    }
+  ],
+  "zoomEquivalent200": {
+    "viewport": {
+      "width": 720,
+      "height": 450
+    },
+    "classes": "mobile-cascade",
+    "documentWidth": 720,
+    "focused": "<h2 id=\"contact-heading\" tabindex=\"-1\">Good work begins<br>with a <span class=\"accent\">conversation.</span></h2>",
+    "chapters": [
+      {
+        "id": "home",
+        "top": -5876,
+        "bottom": -4903.4375,
+        "height": 972.5625,
+        "scrollHeight": 973,
+        "clientHeight": 973,
+        "scrollTop": 0,
+        "contentTop": -5738,
+        "contentBottom": -4956.4375,
+        "footerTop": -4952.78125,
+        "footerBottom": -4936.09375,
+        "inert": false,
+        "visible": false
+      },
+      {
+        "id": "about",
+        "top": -4903.4375,
+        "bottom": -3637.078125,
+        "height": 1266.359375,
+        "scrollHeight": 1266,
+        "clientHeight": 1266,
+        "scrollTop": 0,
+        "contentTop": -4765.4375,
+        "contentBottom": -3690.078125,
+        "footerTop": -3686.421875,
+        "footerBottom": -3669.734375,
+        "inert": false,
+        "visible": false
+      },
+      {
+        "id": "experience",
+        "top": -3637.078125,
+        "bottom": -2459.9375,
+        "height": 1177.140625,
+        "scrollHeight": 1177,
+        "clientHeight": 1177,
+        "scrollTop": 0,
+        "contentTop": -3499.078125,
+        "contentBottom": -2512.9375,
+        "footerTop": -2509.28125,
+        "footerBottom": -2492.59375,
+        "inert": false,
+        "visible": false
+      },
+      {
+        "id": "projects",
+        "top": -2459.9375,
+        "bottom": -1080.84375,
+        "height": 1379.09375,
+        "scrollHeight": 1379,
+        "clientHeight": 1379,
+        "scrollTop": 0,
+        "contentTop": -2321.9375,
+        "contentBottom": -1133.84375,
+        "footerTop": -1130.1875,
+        "footerBottom": -1113.5,
+        "inert": false,
+        "visible": false
+      },
+      {
+        "id": "resources",
+        "top": -1080.84375,
+        "bottom": -0.15625,
+        "height": 1080.6875,
+        "scrollHeight": 1081,
+        "clientHeight": 1081,
+        "scrollTop": 0,
+        "contentTop": -942.84375,
+        "contentBottom": -53.15625,
+        "footerTop": -49.5,
+        "footerBottom": -32.8125,
+        "inert": false,
+        "visible": false
+      },
+      {
+        "id": "contact",
+        "top": -0.15625,
+        "bottom": 817.84375,
+        "height": 818,
+        "scrollHeight": 818,
+        "clientHeight": 818,
+        "scrollTop": 0,
+        "contentTop": 115.84375,
+        "contentBottom": 758.15625,
+        "footerTop": 776.15625,
+        "footerBottom": 792.84375,
+        "inert": false,
+        "visible": true
+      }
+    ],
+    "type": [
+      {
+        "text": "Good work beginswith a conversation.",
+        "font": "Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "size": "33.48px",
+        "weight": "765",
+        "lineHeight": "37.4976px",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "I am interested in connecting with people and organizations working at",
+        "font": "Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "size": "16.32px",
+        "weight": "400",
+        "lineHeight": "28.56px",
+        "color": "rgb(197, 220, 214)"
+      }
+    ]
+  },
+  "touchSwipe": {
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "classes": "mobile-cascade",
+    "documentWidth": 390,
+    "focused": "<body>\n<a class=\"skip\" href=\"#home\">Skip to content</a>\n<header class=\"top\">\n <div class=\"top-inner wrap\">\n  <a href=\"#home\" class=\"logo\" aria-label=\"Aaron Lozano, home\">aaron<span>.</span>lozano</a>\n  <button type=\"button\" class=\"menu-toggle\" id=\"menu-toggle\" aria-controls=\"nav\" aria-expanded=\"fals",
+    "chapters": [
+      {
+        "id": "home",
+        "top": 0,
+        "bottom": 1111.6875,
+        "height": 1111.6875,
+        "scrollHeight": 1112,
+        "clientHeight": 1112,
+        "scrollTop": 0,
+        "contentTop": 109,
+        "contentBottom": 1024.6875,
+        "footerTop": 1056.09375,
+        "footerBottom": 1073.265625,
+        "inert": false,
+        "visible": true
+      },
+      {
+        "id": "about",
+        "top": 1111.6875,
+        "bottom": 2789.890625,
+        "height": 1678.203125,
+        "scrollHeight": 1678,
+        "clientHeight": 1678,
+        "scrollTop": 0,
+        "contentTop": 1242.6875,
+        "contentBottom": 2724.890625,
+        "footerTop": 2734.296875,
+        "footerBottom": 2751.46875,
+        "inert": false,
+        "visible": false
+      },
+      {
+        "id": "experience",
+        "top": 2789.890625,
+        "bottom": 4289.5,
+        "height": 1499.609375,
+        "scrollHeight": 1500,
+        "clientHeight": 1500,
+        "scrollTop": 0,
+        "contentTop": 2920.890625,
+        "contentBottom": 4224.5,
+        "footerTop": 4233.90625,
+        "footerBottom": 4251.078125,
+        "inert": false,
+        "visible": false
+      },
+      {
+        "id": "projects",
+        "top": 4289.5,
+        "bottom": 6072.703125,
+        "height": 1783.203125,
+        "scrollHeight": 1783,
+        "clientHeight": 1783,
+        "scrollTop": 0,
+        "contentTop": 4420.5,
+        "contentBottom": 6007.703125,
+        "footerTop": 6017.109375,
+        "footerBottom": 6034.28125,
+        "inert": false,
+        "visible": false
+      },
+      {
+        "id": "resources",
+        "top": 6072.703125,
+        "bottom": 7499.0625,
+        "height": 1426.359375,
+        "scrollHeight": 1426,
+        "clientHeight": 1426,
+        "scrollTop": 0,
+        "contentTop": 6203.703125,
+        "contentBottom": 7434.0625,
+        "footerTop": 7443.46875,
+        "footerBottom": 7460.640625,
+        "inert": false,
+        "visible": false
+      },
+      {
+        "id": "contact",
+        "top": 7499.0625,
+        "bottom": 8416.53125,
+        "height": 917.46875,
+        "scrollHeight": 917,
+        "clientHeight": 917,
+        "scrollTop": 0,
+        "contentTop": 7630.0625,
+        "contentBottom": 8361.1875,
+        "footerTop": 8357.1875,
+        "footerBottom": 8391.53125,
+        "inert": false,
+        "visible": false
+      }
+    ],
+    "type": [
+      {
+        "text": "Using business & technologyfor social & environmental impact.",
+        "font": "Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "size": "28.8px",
+        "weight": "790",
+        "lineHeight": "31.68px",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "I work across finance, business strategy and technology—evaluating opp",
+        "font": "Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "lineHeight": "28px",
+        "color": "rgb(197, 220, 214)"
+      }
+    ]
+  }
+}
