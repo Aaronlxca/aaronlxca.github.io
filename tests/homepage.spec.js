@@ -2,7 +2,10 @@ const { test, expect } = require('@playwright/test');
 const AxeBuilder = require('@axe-core/playwright').default;
 const fs = require('node:fs');
 const path = require('node:path');
-const evidence = path.resolve(__dirname, '../audit');
+// Keep repeatable QA runs separate from the committed historical audit.
+const evidence = process.env.QA_OUTPUT_DIR
+  ? path.resolve(process.env.QA_OUTPUT_DIR)
+  : path.resolve(__dirname, '../test-results/evidence');
 const ids = ['home', 'about', 'experience', 'projects', 'resources', 'contact'];
 fs.mkdirSync(path.join(evidence, 'screenshots'), { recursive: true });
 
