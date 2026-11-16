@@ -76,9 +76,9 @@
       "name": "Chapter navigation",
       "kind": "nav",
       "refersTo": "chapter-next",
-      "description": "Observed homepage style; contextual CSS custom properties come from DESIGN.md.",
+      "description": "Normal-flow chapter action; shares a row after the content with the fully opaque chapter label.",
       "html": "<a class=\"ds-chapter-next\" href=\"#\">Next: About ↓</a>",
-      "css": "\n.ds-chapter-next{position:absolute;right:clamp(30px,5vw,90px);bottom:25px;font-size:.79rem;color:inherit;opacity:.63}\n.ds-chapter-next:hover{opacity:1}\n.ds-chapter-next{display:inline-flex;align-items:center;gap:9px;font-weight:750;opacity:.85;border:1px solid currentColor;border-radius:100px;padding:9px 14px;text-transform:uppercase;letter-spacing:.10em;font-size:.66rem;transition:opacity .2s,transform .2s}\n.ds-chapter-next:hover{transform:translateY(-3px)}\n .ds-chapter-next{display:inline-flex;right:23px;bottom:19px;padding:8px 10px;font-size:.58rem;letter-spacing:.06em}\n .btn,.resource,.side-dots a,.ds-chapter-next{transition:none}"
+      "css": "\n.ds-chapter-next{position:absolute;right:clamp(30px,5vw,90px);bottom:25px;font-size:.79rem;color:inherit;opacity:.63}\n.ds-chapter-next:hover{opacity:1}\n.ds-chapter-next{display:inline-flex;align-items:center;gap:9px;font-weight:750;opacity:.85;border:1px solid currentColor;border-radius:100px;padding:9px 14px;text-transform:uppercase;letter-spacing:.10em;font-size:.66rem;transition:opacity .2s,transform .2s}\n.ds-chapter-next:hover{transform:translateY(-3px)}\n .ds-chapter-next{display:inline-flex;right:23px;bottom:19px;padding:8px 10px;font-size:.58rem;letter-spacing:.06em}\n .btn,.resource,.side-dots a,.ds-chapter-next{transition:none} .ds-chapter-next{position:static;left:auto;right:auto;bottom:auto;margin:0} @media(max-width:620px){.ds-chapter-next{min-height:44px;padding:10px 12px;font-size:.75rem;letter-spacing:.035em}}"
     },
     {
       "name": "Project surface",
@@ -98,7 +98,7 @@
     }
   ],
   "narrative": {
-    "overview": "This document records the existing implementation at commit `69af386`, not a proposed redesign. Sources are the inline CSS, semantic HTML, interaction script, favicon and rendered homepage. The owner describes its intended character as **professional, precise, and approachable**. The homepage is an ordered six-chapter presentation of José Aarón Lozano Campos’s work in finance, business strategy, technology and sustainability.\n\nThe identity combines deep navy and forest green stages with pale neutral chapters, lime highlights, compact bold headings, numbered chapter markers and restrained rounded cards. Content remains the authority: retain names and accents, career history, project attribution and status, confidentiality caveats, planned resources and existing outbound destinations.",
+    "overview": "This document records the existing implementation, including the A01–A04 accessibility corrections in PR #1, not a proposed redesign. The original `69af386` appearance remains documented in [the historical audit](audit/REPORT.md). Sources are the inline CSS, semantic HTML, interaction script, favicon and rendered homepage. The owner describes its intended character as **professional, precise, and approachable**. The homepage is an ordered six-chapter presentation of José Aarón Lozano Campos’s work in finance, business strategy, technology and sustainability.\n\nThe identity combines deep navy and forest green stages with pale neutral chapters, lime highlights, compact bold headings, numbered chapter markers and restrained rounded cards. Content remains the authority: retain names and accents, career history, project attribution and status, confidentiality caveats, planned resources and existing outbound destinations.",
     "keyCharacteristics": [
       "Alternating dark and light chapters with a persistent wordmark and navigation.",
       "A controlled desktop cascade; normal reading and touch scrolling on smaller screens.",

@@ -76,6 +76,8 @@ On another computer, omit `IMPECCABLE_HOME` to use the standard per-user cache. 
 
 ## Verification run and screenshots
 
+This section records the initial setup run before UI corrections. See the [A01–A04 follow-up review](docs/qa/a01-a04/REPORT.md) for the corrected site, expanded suite and updated screenshots; the original captures below remain the historical setup baseline.
+
 The complete ordinary Playwright suite passed on 16 November 2026: **5 passed, 4 intentionally skipped duplicate desktop-only groups**, in approximately 1.8 minutes. All three viewport walkthroughs recorded six chapters and zero JavaScript page errors. The run produced 49 fresh screenshots in `test-results/evidence/screenshots/`. The focused screenshot command was also checked with `--list` and selects exactly the three device walkthroughs.
 
 Runtime: Node 24.22.1, npm 11.9.0, system Chromium 156.0.8078.79. `npm ci --ignore-scripts` completed successfully from the lockfile. Both configuration/test files passed Node syntax checks. Impeccable's engine probe and detector executed; Vercel's installed file was compared to the reviewed source and hashed. No new hook or integration configuration was added.

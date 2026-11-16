@@ -18,6 +18,8 @@ Impeccable is installed as a project-local Codex skill. Its pinned source and in
 
 The repository also includes Vercel's reviewed `web-design-guidelines` skill. [AGENTS.md](AGENTS.md) points coding agents to the design guidance and tests; [QA_SETUP.md](QA_SETUP.md) records installation results, sources, commands and permission boundaries. Hooks and external integrations remain disabled.
 
+[A01–A04 correction review](docs/qa/a01-a04/REPORT.md) records the follow-up focus, contrast and footer fixes, expanded regression tests, and updated screenshots compared with the original audit.
+
 ## Browser testing
 
 The optional Node dependencies support development tests only; GitHub Pages still serves the original static files without a build step.

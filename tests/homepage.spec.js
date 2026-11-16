@@ -48,6 +48,8 @@ test('six chapters: navigation, screenshots, geometry, accessibility and disclos
   page.on('pageerror', e => errors.push(e.message));
   await page.goto('/');
   await settle(page);
+  if(info.project.name==='desktop') await expect(page.locator('html')).toHaveClass(/cascade-enabled/);
+  else expect(await page.locator('html').getAttribute('class')).not.toContain('cascade-enabled');
   await expect(page.locator('main > section')).toHaveCount(6);
   const results = [];
   for (const [index, id] of ids.entries()) {
@@ -115,6 +117,7 @@ test('desktop cascade, keyboard, history, reduced motion and breakpoint probes',
   await page.goto('/'); await settle(page);
   await page.keyboard.press('PageDown'); await settle(page);
   probes.pageDown = await geometry(page);
+  await expect(page.locator('#about')).toHaveClass(/is-active/);
   await chapter(page, 'projects'); await chapter(page, 'contact');
   await page.goBack(); await settle(page);
   probes.history = await geometry(page);
@@ -195,6 +198,8 @@ test('targeted audit diagnostics', async ({ page, context }, info) => {
   await swipe.send('Input.dispatchTouchEvent', {type:'touchEnd',touchPoints:[]});
   await settle(page);
   results.nativeTouchSwipe=await geometry(page);
+  expect(results.nativeTouchSwipe.classes).not.toContain('cascade-enabled');
+  expect(results.nativeTouchSwipe.chapters[0].top).toBeLessThan(-20);
   await page.screenshot({path:path.join(evidence,'screenshots/mobile-dispatched-touch-swipe.png')});
   const tc=await context.browser().newContext({viewport:{width:1024,height:768},hasTouch:true,isMobile:true});
   const t=await tc.newPage(); await t.goto(info.project.use.baseURL+'/#about'); await settle(t);

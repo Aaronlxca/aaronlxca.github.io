@@ -1,0 +1,1472 @@
+[
+  {
+    "id": "home",
+    "content": {
+      "top": 143.484375,
+      "bottom": 632.515625,
+      "left": 45,
+      "right": 1235,
+      "height": 489.03125
+    },
+    "tools": {
+      "top": 660,
+      "bottom": 692,
+      "left": 45,
+      "right": 1235,
+      "height": 32
+    },
+    "textBottom": 632.515625,
+    "labels": [
+      {
+        "text": "Finance · Business strategy · Technology",
+        "color": "rgb(211, 244, 155)",
+        "background": "rgb(32, 71, 63)",
+        "opacity": 1,
+        "ratio": 8.446042417054349
+      },
+      {
+        "text": "01 / Home",
+        "color": "rgb(197, 220, 214)",
+        "background": "rgb(32, 71, 63)",
+        "opacity": 1,
+        "ratio": 7.16758207024052
+      }
+    ],
+    "viewportWidth": 1280,
+    "documentWidth": 1280,
+    "chapter": {
+      "top": 0,
+      "bottom": 720,
+      "left": 0,
+      "right": 1280,
+      "height": 720
+    },
+    "scrollHeight": 720,
+    "clientHeight": 720,
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    }
+  },
+  {
+    "id": "about",
+    "content": {
+      "top": 134,
+      "bottom": 788.09375,
+      "left": 45,
+      "right": 1235,
+      "height": 654.09375
+    },
+    "tools": {
+      "top": 806.09375,
+      "bottom": 838.09375,
+      "left": 45,
+      "right": 1235,
+      "height": 32
+    },
+    "textBottom": 783.34375,
+    "labels": [
+      {
+        "text": "02 / About",
+        "color": "rgb(36, 109, 84)",
+        "background": "rgb(246, 248, 244)",
+        "opacity": 1,
+        "ratio": 5.796173832193878
+      },
+      {
+        "text": "02 / About",
+        "color": "rgb(82, 103, 107)",
+        "background": "rgb(246, 248, 244)",
+        "opacity": 1,
+        "ratio": 5.596947484686967
+      }
+    ],
+    "viewportWidth": 1280,
+    "documentWidth": 1280,
+    "chapter": {
+      "top": 0,
+      "bottom": 720,
+      "left": 0,
+      "right": 1280,
+      "height": 720
+    },
+    "scrollHeight": 866,
+    "clientHeight": 720,
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    }
+  },
+  {
+    "id": "experience",
+    "content": {
+      "top": 134,
+      "bottom": 725.09375,
+      "left": 45,
+      "right": 1235,
+      "height": 591.09375
+    },
+    "tools": {
+      "top": 743.09375,
+      "bottom": 775.09375,
+      "left": 45,
+      "right": 1235,
+      "height": 32
+    },
+    "textBottom": 708.046875,
+    "labels": [
+      {
+        "text": "03 / Experience",
+        "color": "rgb(211, 244, 155)",
+        "background": "rgb(32, 75, 66)",
+        "opacity": 1,
+        "ratio": 8.005235170277654
+      },
+      {
+        "text": "03 / Experience",
+        "color": "rgb(223, 237, 229)",
+        "background": "rgb(32, 75, 66)",
+        "opacity": 1,
+        "ratio": 8.098100348960427
+      }
+    ],
+    "viewportWidth": 1280,
+    "documentWidth": 1280,
+    "chapter": {
+      "top": 0,
+      "bottom": 720,
+      "left": 0,
+      "right": 1280,
+      "height": 720
+    },
+    "scrollHeight": 803,
+    "clientHeight": 720,
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    }
+  },
+  {
+    "id": "projects",
+    "content": {
+      "top": 134,
+      "bottom": 768.40625,
+      "left": 45,
+      "right": 1235,
+      "height": 634.40625
+    },
+    "tools": {
+      "top": 786.40625,
+      "bottom": 818.40625,
+      "left": 45,
+      "right": 1235,
+      "height": 32
+    },
+    "textBottom": 768.40625,
+    "labels": [
+      {
+        "text": "04 / Selected work",
+        "color": "rgb(36, 109, 84)",
+        "background": "rgb(255, 255, 255)",
+        "opacity": 1,
+        "ratio": 6.193798769128913
+      },
+      {
+        "text": "04 / Projects",
+        "color": "rgb(82, 103, 107)",
+        "background": "rgb(255, 255, 255)",
+        "opacity": 1,
+        "ratio": 5.980905239415832
+      }
+    ],
+    "viewportWidth": 1280,
+    "documentWidth": 1280,
+    "chapter": {
+      "top": 0,
+      "bottom": 720,
+      "left": 0,
+      "right": 1280,
+      "height": 720
+    },
+    "scrollHeight": 846,
+    "clientHeight": 720,
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    }
+  },
+  {
+    "id": "resources",
+    "content": {
+      "top": 154.625,
+      "bottom": 621.390625,
+      "left": 45,
+      "right": 1235,
+      "height": 466.765625
+    },
+    "tools": {
+      "top": 660,
+      "bottom": 692,
+      "left": 45,
+      "right": 1235,
+      "height": 32
+    },
+    "textBottom": 592.390625,
+    "labels": [
+      {
+        "text": "05 / Resources",
+        "color": "rgb(36, 109, 84)",
+        "background": "rgb(236, 240, 239)",
+        "opacity": 1,
+        "ratio": 5.390671796006984
+      },
+      {
+        "text": "05 / Resources",
+        "color": "rgb(82, 103, 107)",
+        "background": "rgb(236, 240, 239)",
+        "opacity": 1,
+        "ratio": 5.205383382715818
+      }
+    ],
+    "viewportWidth": 1280,
+    "documentWidth": 1280,
+    "chapter": {
+      "top": 0,
+      "bottom": 720,
+      "left": 0,
+      "right": 1280,
+      "height": 720
+    },
+    "scrollHeight": 720,
+    "clientHeight": 720,
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    }
+  },
+  {
+    "id": "contact",
+    "content": {
+      "top": 200.515625,
+      "bottom": 590.796875,
+      "left": 45,
+      "right": 1235,
+      "height": 390.28125
+    },
+    "tools": {
+      "top": 675.3125,
+      "bottom": 692,
+      "left": 45,
+      "right": 1235,
+      "height": 16.6875
+    },
+    "textBottom": 536.796875,
+    "labels": [
+      {
+        "text": "06 / Contact",
+        "color": "rgb(211, 244, 155)",
+        "background": "rgb(11, 29, 40)",
+        "opacity": 1,
+        "ratio": 14.077618761677407
+      },
+      {
+        "text": "06 / Contact · © 2026 José Aarón Lozano Campos",
+        "color": "rgb(197, 220, 214)",
+        "background": "rgb(11, 29, 40)",
+        "opacity": 1,
+        "ratio": 11.946718101265635
+      }
+    ],
+    "viewportWidth": 1280,
+    "documentWidth": 1280,
+    "chapter": {
+      "top": 0,
+      "bottom": 720,
+      "left": 0,
+      "right": 1280,
+      "height": 720
+    },
+    "scrollHeight": 720,
+    "clientHeight": 720,
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    }
+  },
+  {
+    "id": "home",
+    "content": {
+      "top": 152.296875,
+      "bottom": 671.703125,
+      "left": 35,
+      "right": 989,
+      "height": 519.40625
+    },
+    "tools": {
+      "top": 708,
+      "bottom": 740,
+      "left": 44,
+      "right": 980,
+      "height": 32
+    },
+    "textBottom": 671.703125,
+    "labels": [
+      {
+        "text": "Finance · Business strategy · Technology",
+        "color": "rgb(211, 244, 155)",
+        "background": "rgb(32, 71, 63)",
+        "opacity": 1,
+        "ratio": 8.446042417054349
+      },
+      {
+        "text": "01 / Home",
+        "color": "rgb(197, 220, 214)",
+        "background": "rgb(32, 71, 63)",
+        "opacity": 1,
+        "ratio": 7.16758207024052
+      }
+    ],
+    "viewportWidth": 1024,
+    "documentWidth": 1024,
+    "chapter": {
+      "top": 0,
+      "bottom": 768,
+      "left": 0,
+      "right": 1024,
+      "height": 768
+    },
+    "scrollHeight": 768,
+    "clientHeight": 768,
+    "viewport": {
+      "width": 1024,
+      "height": 768
+    }
+  },
+  {
+    "id": "about",
+    "content": {
+      "top": 134,
+      "bottom": 873.59375,
+      "left": 35,
+      "right": 989,
+      "height": 739.59375
+    },
+    "tools": {
+      "top": 891.59375,
+      "bottom": 923.59375,
+      "left": 44,
+      "right": 980,
+      "height": 32
+    },
+    "textBottom": 868.84375,
+    "labels": [
+      {
+        "text": "02 / About",
+        "color": "rgb(36, 109, 84)",
+        "background": "rgb(246, 248, 244)",
+        "opacity": 1,
+        "ratio": 5.796173832193878
+      },
+      {
+        "text": "02 / About",
+        "color": "rgb(82, 103, 107)",
+        "background": "rgb(246, 248, 244)",
+        "opacity": 1,
+        "ratio": 5.596947484686967
+      }
+    ],
+    "viewportWidth": 1024,
+    "documentWidth": 1024,
+    "chapter": {
+      "top": 0,
+      "bottom": 768,
+      "left": 0,
+      "right": 1024,
+      "height": 768
+    },
+    "scrollHeight": 952,
+    "clientHeight": 768,
+    "viewport": {
+      "width": 1024,
+      "height": 768
+    }
+  },
+  {
+    "id": "experience",
+    "content": {
+      "top": 134,
+      "bottom": 746.296875,
+      "left": 35,
+      "right": 989,
+      "height": 612.296875
+    },
+    "tools": {
+      "top": 764.296875,
+      "bottom": 796.296875,
+      "left": 44,
+      "right": 980,
+      "height": 32
+    },
+    "textBottom": 719,
+    "labels": [
+      {
+        "text": "03 / Experience",
+        "color": "rgb(211, 244, 155)",
+        "background": "rgb(32, 75, 66)",
+        "opacity": 1,
+        "ratio": 8.005235170277654
+      },
+      {
+        "text": "03 / Experience",
+        "color": "rgb(223, 237, 229)",
+        "background": "rgb(32, 75, 66)",
+        "opacity": 1,
+        "ratio": 8.098100348960427
+      }
+    ],
+    "viewportWidth": 1024,
+    "documentWidth": 1024,
+    "chapter": {
+      "top": 0,
+      "bottom": 768,
+      "left": 0,
+      "right": 1024,
+      "height": 768
+    },
+    "scrollHeight": 824,
+    "clientHeight": 768,
+    "viewport": {
+      "width": 1024,
+      "height": 768
+    }
+  },
+  {
+    "id": "projects",
+    "content": {
+      "top": 134,
+      "bottom": 793.734375,
+      "left": 35,
+      "right": 989,
+      "height": 659.734375
+    },
+    "tools": {
+      "top": 811.734375,
+      "bottom": 843.734375,
+      "left": 44,
+      "right": 980,
+      "height": 32
+    },
+    "textBottom": 793.734375,
+    "labels": [
+      {
+        "text": "04 / Selected work",
+        "color": "rgb(36, 109, 84)",
+        "background": "rgb(255, 255, 255)",
+        "opacity": 1,
+        "ratio": 6.193798769128913
+      },
+      {
+        "text": "04 / Projects",
+        "color": "rgb(82, 103, 107)",
+        "background": "rgb(255, 255, 255)",
+        "opacity": 1,
+        "ratio": 5.980905239415832
+      }
+    ],
+    "viewportWidth": 1024,
+    "documentWidth": 1024,
+    "chapter": {
+      "top": 0,
+      "bottom": 768,
+      "left": 0,
+      "right": 1024,
+      "height": 768
+    },
+    "scrollHeight": 872,
+    "clientHeight": 768,
+    "viewport": {
+      "width": 1024,
+      "height": 768
+    }
+  },
+  {
+    "id": "resources",
+    "content": {
+      "top": 161.515625,
+      "bottom": 662.484375,
+      "left": 35,
+      "right": 989,
+      "height": 500.96875
+    },
+    "tools": {
+      "top": 708,
+      "bottom": 740,
+      "left": 44,
+      "right": 980,
+      "height": 32
+    },
+    "textBottom": 633.484375,
+    "labels": [
+      {
+        "text": "05 / Resources",
+        "color": "rgb(36, 109, 84)",
+        "background": "rgb(236, 240, 239)",
+        "opacity": 1,
+        "ratio": 5.390671796006984
+      },
+      {
+        "text": "05 / Resources",
+        "color": "rgb(82, 103, 107)",
+        "background": "rgb(236, 240, 239)",
+        "opacity": 1,
+        "ratio": 5.205383382715818
+      }
+    ],
+    "viewportWidth": 1024,
+    "documentWidth": 1024,
+    "chapter": {
+      "top": 0,
+      "bottom": 768,
+      "left": 0,
+      "right": 1024,
+      "height": 768
+    },
+    "scrollHeight": 768,
+    "clientHeight": 768,
+    "viewport": {
+      "width": 1024,
+      "height": 768
+    }
+  },
+  {
+    "id": "contact",
+    "content": {
+      "top": 212.109375,
+      "bottom": 627.203125,
+      "left": 35,
+      "right": 989,
+      "height": 415.09375
+    },
+    "tools": {
+      "top": 723.3125,
+      "bottom": 740,
+      "left": 44,
+      "right": 980,
+      "height": 16.6875
+    },
+    "textBottom": 573.203125,
+    "labels": [
+      {
+        "text": "06 / Contact",
+        "color": "rgb(211, 244, 155)",
+        "background": "rgb(11, 29, 40)",
+        "opacity": 1,
+        "ratio": 14.077618761677407
+      },
+      {
+        "text": "06 / Contact · © 2026 José Aarón Lozano Campos",
+        "color": "rgb(197, 220, 214)",
+        "background": "rgb(11, 29, 40)",
+        "opacity": 1,
+        "ratio": 11.946718101265635
+      }
+    ],
+    "viewportWidth": 1024,
+    "documentWidth": 1024,
+    "chapter": {
+      "top": 0,
+      "bottom": 768,
+      "left": 0,
+      "right": 1024,
+      "height": 768
+    },
+    "scrollHeight": 768,
+    "clientHeight": 768,
+    "viewport": {
+      "width": 1024,
+      "height": 768
+    }
+  },
+  {
+    "id": "home",
+    "content": {
+      "top": 217.671875,
+      "bottom": 738.34375,
+      "left": 35,
+      "right": 786,
+      "height": 520.671875
+    },
+    "tools": {
+      "top": 840,
+      "bottom": 872,
+      "left": 44,
+      "right": 777,
+      "height": 32
+    },
+    "textBottom": 738.34375,
+    "labels": [
+      {
+        "text": "Finance · Business strategy · Technology",
+        "color": "rgb(211, 244, 155)",
+        "background": "rgb(32, 71, 63)",
+        "opacity": 1,
+        "ratio": 8.446042417054349
+      },
+      {
+        "text": "01 / Home",
+        "color": "rgb(197, 220, 214)",
+        "background": "rgb(32, 71, 63)",
+        "opacity": 1,
+        "ratio": 7.16758207024052
+      }
+    ],
+    "viewportWidth": 821,
+    "documentWidth": 821,
+    "chapter": {
+      "top": 0,
+      "bottom": 900,
+      "left": 0,
+      "right": 821,
+      "height": 900
+    },
+    "scrollHeight": 900,
+    "clientHeight": 900,
+    "viewport": {
+      "width": 821,
+      "height": 900
+    }
+  },
+  {
+    "id": "about",
+    "content": {
+      "top": 134,
+      "bottom": 1052.625,
+      "left": 35,
+      "right": 786,
+      "height": 918.625
+    },
+    "tools": {
+      "top": 1070.625,
+      "bottom": 1102.625,
+      "left": 44,
+      "right": 777,
+      "height": 32
+    },
+    "textBottom": 1047.875,
+    "labels": [
+      {
+        "text": "02 / About",
+        "color": "rgb(36, 109, 84)",
+        "background": "rgb(246, 248, 244)",
+        "opacity": 1,
+        "ratio": 5.796173832193878
+      },
+      {
+        "text": "02 / About",
+        "color": "rgb(82, 103, 107)",
+        "background": "rgb(246, 248, 244)",
+        "opacity": 1,
+        "ratio": 5.596947484686967
+      }
+    ],
+    "viewportWidth": 821,
+    "documentWidth": 821,
+    "chapter": {
+      "top": 0,
+      "bottom": 900,
+      "left": 0,
+      "right": 821,
+      "height": 900
+    },
+    "scrollHeight": 1131,
+    "clientHeight": 900,
+    "viewport": {
+      "width": 821,
+      "height": 900
+    }
+  },
+  {
+    "id": "experience",
+    "content": {
+      "top": 134,
+      "bottom": 846.640625,
+      "left": 35,
+      "right": 786,
+      "height": 712.640625
+    },
+    "tools": {
+      "top": 864.640625,
+      "bottom": 896.640625,
+      "left": 44,
+      "right": 777,
+      "height": 32
+    },
+    "textBottom": 829.59375,
+    "labels": [
+      {
+        "text": "03 / Experience",
+        "color": "rgb(211, 244, 155)",
+        "background": "rgb(32, 75, 66)",
+        "opacity": 1,
+        "ratio": 8.005235170277654
+      },
+      {
+        "text": "03 / Experience",
+        "color": "rgb(223, 237, 229)",
+        "background": "rgb(32, 75, 66)",
+        "opacity": 1,
+        "ratio": 8.098100348960427
+      }
+    ],
+    "viewportWidth": 821,
+    "documentWidth": 821,
+    "chapter": {
+      "top": 0,
+      "bottom": 900,
+      "left": 0,
+      "right": 821,
+      "height": 900
+    },
+    "scrollHeight": 925,
+    "clientHeight": 900,
+    "viewport": {
+      "width": 821,
+      "height": 900
+    }
+  },
+  {
+    "id": "projects",
+    "content": {
+      "top": 134,
+      "bottom": 891.46875,
+      "left": 35,
+      "right": 786,
+      "height": 757.46875
+    },
+    "tools": {
+      "top": 909.46875,
+      "bottom": 941.46875,
+      "left": 44,
+      "right": 777,
+      "height": 32
+    },
+    "textBottom": 891.46875,
+    "labels": [
+      {
+        "text": "04 / Selected work",
+        "color": "rgb(36, 109, 84)",
+        "background": "rgb(255, 255, 255)",
+        "opacity": 1,
+        "ratio": 6.193798769128913
+      },
+      {
+        "text": "04 / Projects",
+        "color": "rgb(82, 103, 107)",
+        "background": "rgb(255, 255, 255)",
+        "opacity": 1,
+        "ratio": 5.980905239415832
+      }
+    ],
+    "viewportWidth": 821,
+    "documentWidth": 821,
+    "chapter": {
+      "top": 0,
+      "bottom": 900,
+      "left": 0,
+      "right": 821,
+      "height": 900
+    },
+    "scrollHeight": 969,
+    "clientHeight": 900,
+    "viewport": {
+      "width": 821,
+      "height": 900
+    }
+  },
+  {
+    "id": "resources",
+    "content": {
+      "top": 171.171875,
+      "bottom": 784.828125,
+      "left": 35,
+      "right": 786,
+      "height": 613.65625
+    },
+    "tools": {
+      "top": 840,
+      "bottom": 872,
+      "left": 44,
+      "right": 777,
+      "height": 32
+    },
+    "textBottom": 755.828125,
+    "labels": [
+      {
+        "text": "05 / Resources",
+        "color": "rgb(36, 109, 84)",
+        "background": "rgb(236, 240, 239)",
+        "opacity": 1,
+        "ratio": 5.390671796006984
+      },
+      {
+        "text": "05 / Resources",
+        "color": "rgb(82, 103, 107)",
+        "background": "rgb(236, 240, 239)",
+        "opacity": 1,
+        "ratio": 5.205383382715818
+      }
+    ],
+    "viewportWidth": 821,
+    "documentWidth": 821,
+    "chapter": {
+      "top": 0,
+      "bottom": 900,
+      "left": 0,
+      "right": 821,
+      "height": 900
+    },
+    "scrollHeight": 900,
+    "clientHeight": 900,
+    "viewport": {
+      "width": 821,
+      "height": 900
+    }
+  },
+  {
+    "id": "contact",
+    "content": {
+      "top": 253.296875,
+      "bottom": 718.015625,
+      "left": 35,
+      "right": 786,
+      "height": 464.71875
+    },
+    "tools": {
+      "top": 855.3125,
+      "bottom": 872,
+      "left": 44,
+      "right": 777,
+      "height": 16.6875
+    },
+    "textBottom": 664.015625,
+    "labels": [
+      {
+        "text": "06 / Contact",
+        "color": "rgb(211, 244, 155)",
+        "background": "rgb(11, 29, 40)",
+        "opacity": 1,
+        "ratio": 14.077618761677407
+      },
+      {
+        "text": "06 / Contact · © 2026 José Aarón Lozano Campos",
+        "color": "rgb(197, 220, 214)",
+        "background": "rgb(11, 29, 40)",
+        "opacity": 1,
+        "ratio": 11.946718101265635
+      }
+    ],
+    "viewportWidth": 821,
+    "documentWidth": 821,
+    "chapter": {
+      "top": 0,
+      "bottom": 900,
+      "left": 0,
+      "right": 821,
+      "height": 900
+    },
+    "scrollHeight": 900,
+    "clientHeight": 900,
+    "viewport": {
+      "width": 821,
+      "height": 900
+    }
+  },
+  {
+    "id": "home",
+    "content": {
+      "top": 116,
+      "bottom": 908.5625,
+      "left": 23,
+      "right": 797,
+      "height": 792.5625
+    },
+    "tools": {
+      "top": 926.5625,
+      "bottom": 958.5625,
+      "left": 23,
+      "right": 797,
+      "height": 32
+    },
+    "textBottom": 908.5625,
+    "labels": [
+      {
+        "text": "Finance · Business strategy · Technology",
+        "color": "rgb(211, 244, 155)",
+        "background": "rgb(32, 71, 63)",
+        "opacity": 1,
+        "ratio": 8.446042417054349
+      },
+      {
+        "text": "01 / Home",
+        "color": "rgb(197, 220, 214)",
+        "background": "rgb(32, 71, 63)",
+        "opacity": 1,
+        "ratio": 7.16758207024052
+      }
+    ],
+    "viewportWidth": 820,
+    "documentWidth": 820,
+    "chapter": {
+      "top": 0,
+      "bottom": 983.5625,
+      "left": 0,
+      "right": 820,
+      "height": 983.5625
+    },
+    "scrollHeight": 984,
+    "clientHeight": 984,
+    "viewport": {
+      "width": 820,
+      "height": 900
+    }
+  },
+  {
+    "id": "about",
+    "content": {
+      "top": 115.5625,
+      "bottom": 1196.0625,
+      "left": 23,
+      "right": 797,
+      "height": 1080.5
+    },
+    "tools": {
+      "top": 1214.0625,
+      "bottom": 1246.0625,
+      "left": 23,
+      "right": 797,
+      "height": 32
+    },
+    "textBottom": 1165.09375,
+    "labels": [
+      {
+        "text": "02 / About",
+        "color": "rgb(36, 109, 84)",
+        "background": "rgb(246, 248, 244)",
+        "opacity": 1,
+        "ratio": 5.796173832193878
+      },
+      {
+        "text": "02 / About",
+        "color": "rgb(82, 103, 107)",
+        "background": "rgb(246, 248, 244)",
+        "opacity": 1,
+        "ratio": 5.596947484686967
+      }
+    ],
+    "viewportWidth": 820,
+    "documentWidth": 820,
+    "chapter": {
+      "top": -0.4375,
+      "bottom": 1271.0625,
+      "left": 0,
+      "right": 820,
+      "height": 1271.5
+    },
+    "scrollHeight": 1272,
+    "clientHeight": 1272,
+    "viewport": {
+      "width": 820,
+      "height": 900
+    }
+  },
+  {
+    "id": "experience",
+    "content": {
+      "top": 116.0625,
+      "bottom": 1065.984375,
+      "left": 23,
+      "right": 797,
+      "height": 949.921875
+    },
+    "tools": {
+      "top": 1083.984375,
+      "bottom": 1115.984375,
+      "left": 23,
+      "right": 797,
+      "height": 32
+    },
+    "textBottom": 1038.6875,
+    "labels": [
+      {
+        "text": "03 / Experience",
+        "color": "rgb(211, 244, 155)",
+        "background": "rgb(32, 75, 66)",
+        "opacity": 1,
+        "ratio": 8.005235170277654
+      },
+      {
+        "text": "03 / Experience",
+        "color": "rgb(223, 237, 229)",
+        "background": "rgb(32, 75, 66)",
+        "opacity": 1,
+        "ratio": 8.098100348960427
+      }
+    ],
+    "viewportWidth": 820,
+    "documentWidth": 820,
+    "chapter": {
+      "top": 0.0625,
+      "bottom": 1140.984375,
+      "left": 0,
+      "right": 820,
+      "height": 1140.921875
+    },
+    "scrollHeight": 1141,
+    "clientHeight": 1141,
+    "viewport": {
+      "width": 820,
+      "height": 900
+    }
+  },
+  {
+    "id": "projects",
+    "content": {
+      "top": 115.984375,
+      "bottom": 1314.453125,
+      "left": 23,
+      "right": 797,
+      "height": 1198.46875
+    },
+    "tools": {
+      "top": 1332.453125,
+      "bottom": 1364.453125,
+      "left": 23,
+      "right": 797,
+      "height": 32
+    },
+    "textBottom": 1314.453125,
+    "labels": [
+      {
+        "text": "04 / Selected work",
+        "color": "rgb(36, 109, 84)",
+        "background": "rgb(255, 255, 255)",
+        "opacity": 1,
+        "ratio": 6.193798769128913
+      },
+      {
+        "text": "04 / Projects",
+        "color": "rgb(82, 103, 107)",
+        "background": "rgb(255, 255, 255)",
+        "opacity": 1,
+        "ratio": 5.980905239415832
+      }
+    ],
+    "viewportWidth": 820,
+    "documentWidth": 820,
+    "chapter": {
+      "top": -0.015625,
+      "bottom": 1389.453125,
+      "left": 0,
+      "right": 820,
+      "height": 1389.46875
+    },
+    "scrollHeight": 1389,
+    "clientHeight": 1389,
+    "viewport": {
+      "width": 820,
+      "height": 900
+    }
+  },
+  {
+    "id": "resources",
+    "content": {
+      "top": 116.453125,
+      "bottom": 992.640625,
+      "left": 23,
+      "right": 797,
+      "height": 876.1875
+    },
+    "tools": {
+      "top": 1010.640625,
+      "bottom": 1042.640625,
+      "left": 23,
+      "right": 797,
+      "height": 32
+    },
+    "textBottom": 963.640625,
+    "labels": [
+      {
+        "text": "05 / Resources",
+        "color": "rgb(36, 109, 84)",
+        "background": "rgb(236, 240, 239)",
+        "opacity": 1,
+        "ratio": 5.390671796006984
+      },
+      {
+        "text": "05 / Resources",
+        "color": "rgb(82, 103, 107)",
+        "background": "rgb(236, 240, 239)",
+        "opacity": 1,
+        "ratio": 5.205383382715818
+      }
+    ],
+    "viewportWidth": 820,
+    "documentWidth": 820,
+    "chapter": {
+      "top": 0.453125,
+      "bottom": 1067.640625,
+      "left": 0,
+      "right": 820,
+      "height": 1067.1875
+    },
+    "scrollHeight": 1067,
+    "clientHeight": 1067,
+    "viewport": {
+      "width": 820,
+      "height": 900
+    }
+  },
+  {
+    "id": "contact",
+    "content": {
+      "top": 151.453125,
+      "bottom": 804.140625,
+      "left": 23,
+      "right": 797,
+      "height": 652.6875
+    },
+    "tools": {
+      "top": 857.953125,
+      "bottom": 874.640625,
+      "left": 23,
+      "right": 797,
+      "height": 16.6875
+    },
+    "textBottom": 750.140625,
+    "labels": [
+      {
+        "text": "06 / Contact",
+        "color": "rgb(211, 244, 155)",
+        "background": "rgb(11, 29, 40)",
+        "opacity": 1,
+        "ratio": 14.077618761677407
+      },
+      {
+        "text": "06 / Contact · © 2026 José Aarón Lozano Campos",
+        "color": "rgb(197, 220, 214)",
+        "background": "rgb(11, 29, 40)",
+        "opacity": 1,
+        "ratio": 11.946718101265635
+      }
+    ],
+    "viewportWidth": 820,
+    "documentWidth": 820,
+    "chapter": {
+      "top": -0.359375,
+      "bottom": 899.640625,
+      "left": 0,
+      "right": 820,
+      "height": 900
+    },
+    "scrollHeight": 900,
+    "clientHeight": 900,
+    "viewport": {
+      "width": 820,
+      "height": 900
+    }
+  },
+  {
+    "id": "home",
+    "content": {
+      "top": 109,
+      "bottom": 1112.359375,
+      "left": 23,
+      "right": 297,
+      "height": 1003.359375
+    },
+    "tools": {
+      "top": 1130.359375,
+      "bottom": 1174.359375,
+      "left": 23,
+      "right": 297,
+      "height": 44
+    },
+    "textBottom": 1112.359375,
+    "labels": [
+      {
+        "text": "Finance · Business strategy · Technology",
+        "color": "rgb(211, 244, 155)",
+        "background": "rgb(32, 71, 63)",
+        "opacity": 1,
+        "ratio": 8.446042417054349
+      },
+      {
+        "text": "01 / Home",
+        "color": "rgb(197, 220, 214)",
+        "background": "rgb(32, 71, 63)",
+        "opacity": 1,
+        "ratio": 7.16758207024052
+      }
+    ],
+    "viewportWidth": 320,
+    "documentWidth": 320,
+    "chapter": {
+      "top": 0,
+      "bottom": 1199.359375,
+      "left": 0,
+      "right": 320,
+      "height": 1199.359375
+    },
+    "scrollHeight": 1199,
+    "clientHeight": 1199,
+    "viewport": {
+      "width": 320,
+      "height": 568
+    }
+  },
+  {
+    "id": "about",
+    "content": {
+      "top": 109.359375,
+      "bottom": 1962.53125,
+      "left": 23,
+      "right": 297,
+      "height": 1853.171875
+    },
+    "tools": {
+      "top": 1980.53125,
+      "bottom": 2024.53125,
+      "left": 23,
+      "right": 297,
+      "height": 44
+    },
+    "textBottom": 1934.5625,
+    "labels": [
+      {
+        "text": "02 / About",
+        "color": "rgb(36, 109, 84)",
+        "background": "rgb(246, 248, 244)",
+        "opacity": 1,
+        "ratio": 5.796173832193878
+      },
+      {
+        "text": "02 / About",
+        "color": "rgb(82, 103, 107)",
+        "background": "rgb(246, 248, 244)",
+        "opacity": 1,
+        "ratio": 5.596947484686967
+      }
+    ],
+    "viewportWidth": 320,
+    "documentWidth": 320,
+    "chapter": {
+      "top": 0.359375,
+      "bottom": 2049.53125,
+      "left": 0,
+      "right": 320,
+      "height": 2049.171875
+    },
+    "scrollHeight": 2049,
+    "clientHeight": 2049,
+    "viewport": {
+      "width": 320,
+      "height": 568
+    }
+  },
+  {
+    "id": "experience",
+    "content": {
+      "top": 108.53125,
+      "bottom": 1672.5,
+      "left": 23,
+      "right": 297,
+      "height": 1563.96875
+    },
+    "tools": {
+      "top": 1690.5,
+      "bottom": 1734.5,
+      "left": 23,
+      "right": 297,
+      "height": 44
+    },
+    "textBottom": 1645.203125,
+    "labels": [
+      {
+        "text": "03 / Experience",
+        "color": "rgb(211, 244, 155)",
+        "background": "rgb(32, 75, 66)",
+        "opacity": 1,
+        "ratio": 8.005235170277654
+      },
+      {
+        "text": "03 / Experience",
+        "color": "rgb(223, 237, 229)",
+        "background": "rgb(32, 75, 66)",
+        "opacity": 1,
+        "ratio": 8.098100348960427
+      }
+    ],
+    "viewportWidth": 320,
+    "documentWidth": 320,
+    "chapter": {
+      "top": -0.46875,
+      "bottom": 1759.5,
+      "left": 0,
+      "right": 320,
+      "height": 1759.96875
+    },
+    "scrollHeight": 1760,
+    "clientHeight": 1760,
+    "viewport": {
+      "width": 320,
+      "height": 568
+    }
+  },
+  {
+    "id": "projects",
+    "content": {
+      "top": 108.5,
+      "bottom": 1859.390625,
+      "left": 23,
+      "right": 297,
+      "height": 1750.890625
+    },
+    "tools": {
+      "top": 1877.390625,
+      "bottom": 1921.390625,
+      "left": 23,
+      "right": 297,
+      "height": 44
+    },
+    "textBottom": 1859.390625,
+    "labels": [
+      {
+        "text": "04 / Selected work",
+        "color": "rgb(36, 109, 84)",
+        "background": "rgb(255, 255, 255)",
+        "opacity": 1,
+        "ratio": 6.193798769128913
+      },
+      {
+        "text": "04 / Projects",
+        "color": "rgb(82, 103, 107)",
+        "background": "rgb(255, 255, 255)",
+        "opacity": 1,
+        "ratio": 5.980905239415832
+      }
+    ],
+    "viewportWidth": 320,
+    "documentWidth": 320,
+    "chapter": {
+      "top": -0.5,
+      "bottom": 1946.390625,
+      "left": 0,
+      "right": 320,
+      "height": 1946.890625
+    },
+    "scrollHeight": 1947,
+    "clientHeight": 1947,
+    "viewport": {
+      "width": 320,
+      "height": 568
+    }
+  },
+  {
+    "id": "resources",
+    "content": {
+      "top": 109.390625,
+      "bottom": 1475.25,
+      "left": 23,
+      "right": 297,
+      "height": 1365.859375
+    },
+    "tools": {
+      "top": 1493.25,
+      "bottom": 1537.25,
+      "left": 23,
+      "right": 297,
+      "height": 44
+    },
+    "textBottom": 1446.25,
+    "labels": [
+      {
+        "text": "05 / Resources",
+        "color": "rgb(36, 109, 84)",
+        "background": "rgb(236, 240, 239)",
+        "opacity": 1,
+        "ratio": 5.390671796006984
+      },
+      {
+        "text": "05 / Resources",
+        "color": "rgb(82, 103, 107)",
+        "background": "rgb(236, 240, 239)",
+        "opacity": 1,
+        "ratio": 5.205383382715818
+      }
+    ],
+    "viewportWidth": 320,
+    "documentWidth": 320,
+    "chapter": {
+      "top": 0.390625,
+      "bottom": 1562.25,
+      "left": 0,
+      "right": 320,
+      "height": 1561.859375
+    },
+    "scrollHeight": 1562,
+    "clientHeight": 1562,
+    "viewport": {
+      "width": 320,
+      "height": 568
+    }
+  },
+  {
+    "id": "contact",
+    "content": {
+      "top": 109.25,
+      "bottom": 918,
+      "left": 23,
+      "right": 297,
+      "height": 808.75
+    },
+    "tools": {
+      "top": 936,
+      "bottom": 970.34375,
+      "left": 23,
+      "right": 297,
+      "height": 34.34375
+    },
+    "textBottom": 875,
+    "labels": [
+      {
+        "text": "06 / Contact",
+        "color": "rgb(211, 244, 155)",
+        "background": "rgb(11, 29, 40)",
+        "opacity": 1,
+        "ratio": 14.077618761677407
+      },
+      {
+        "text": "06 / Contact · © 2026 José Aarón Lozano Campos",
+        "color": "rgb(197, 220, 214)",
+        "background": "rgb(11, 29, 40)",
+        "opacity": 1,
+        "ratio": 11.946718101265635
+      }
+    ],
+    "viewportWidth": 320,
+    "documentWidth": 320,
+    "chapter": {
+      "top": 0.25,
+      "bottom": 995.34375,
+      "left": 0,
+      "right": 320,
+      "height": 995.09375
+    },
+    "scrollHeight": 995,
+    "clientHeight": 995,
+    "viewport": {
+      "width": 320,
+      "height": 568
+    }
+  }
+]
