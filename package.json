@@ -1,0 +1,24 @@
+{
+  "name": "aaronlxca.github.io",
+  "version": "1.0.0",
+  "description": "Single-page portfolio for investment analysis, strategic finance, sustainable finance, and business strategy.",
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "test:report": "playwright show-report"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aaronlxca/aaronlxca.github.io.git"
+  },
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Aaronlxca/aaronlxca.github.io/issues"
+  },
+  "homepage": "https://github.com/Aaronlxca/aaronlxca.github.io#readme",
+  "devDependencies": {
+    "@axe-core/playwright": "4.11.0",
+    "@playwright/test": "1.57.0"
+  },
+  "private": true
+}

@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-16T03:00:00Z",
+  "title": "Design System: Aarón Lozano Portfolio",
+  "extensions": {
+    "shadows": [
+      {
+        "name": "portrait",
+        "value": "0 30px 80px rgba(0,0,0,.24)",
+        "purpose": "Hero portrait"
+      },
+      {
+        "name": "about",
+        "value": "0 18px 65px rgba(30,61,48,.06)",
+        "purpose": "About approach panel"
+      },
+      {
+        "name": "projects",
+        "value": "0 15px 40px rgba(20,52,37,.035)",
+        "purpose": "Project cards"
+      }
+    ],
+    "motion": [
+      {
+        "name": "desktop-stage",
+        "value": ".82s cubic-bezier(.72,0,.23,1)",
+        "purpose": "Chapter stage translation; 880ms input lock"
+      },
+      {
+        "name": "mobile-reveal",
+        "value": ".8s cubic-bezier(.22,1,.36,1)",
+        "purpose": "Chapter reveal transform"
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "compact-desktop",
+        "value": "1080px"
+      },
+      {
+        "name": "stacked",
+        "value": "820px"
+      },
+      {
+        "name": "single-column",
+        "value": "620px"
+      },
+      {
+        "name": "short-desktop-height",
+        "value": "710px"
+      },
+      {
+        "name": "minimum-deck-height",
+        "value": "560px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary action",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Observed homepage style; contextual CSS custom properties come from DESIGN.md.",
+      "html": "<a class=\"ds-btn ds-btn-primary\" href=\"#\">Explore my work ↗</a>",
+      "css": "\n.ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:49px;padding:13px 21px;font-size:.89rem;font-weight:740;line-height:1.2;border-radius:8px;transition:transform .22s,background .22s}\n.ds-btn:hover{transform:translateY(-2px)}\n.ds-btn-primary{background:var(--lime);color:#19362d}.ds-btn-primary:hover{background:#e1f7bd}.ctas .ds-btn{width:100%}\n .ds-btn,.resource,.side-dots a,.chapter-next{transition:none}"
+    },
+    {
+      "name": "Outline action",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Observed homepage style; contextual CSS custom properties come from DESIGN.md.",
+      "html": "<a class=\"ds-btn ds-btn-outline\" href=\"#\">View my résumé ↗</a>",
+      "css": "\n.ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:49px;padding:13px 21px;font-size:.89rem;font-weight:740;line-height:1.2;border-radius:8px;transition:transform .22s,background .22s}\n.ds-btn:hover{transform:translateY(-2px)}\n.ds-btn-outline{color:#f7fcf9;border:1px solid rgba(218,247,227,.45)}.ctas .ds-btn{width:100%}\n .ds-btn,.resource,.side-dots a,.chapter-next{transition:none}"
+    },
+    {
+      "name": "Chapter navigation",
+      "kind": "nav",
+      "refersTo": "chapter-next",
+      "description": "Observed homepage style; contextual CSS custom properties come from DESIGN.md.",
+      "html": "<a class=\"ds-chapter-next\" href=\"#\">Next: About ↓</a>",
+      "css": "\n.ds-chapter-next{position:absolute;right:clamp(30px,5vw,90px);bottom:25px;font-size:.79rem;color:inherit;opacity:.63}\n.ds-chapter-next:hover{opacity:1}\n.ds-chapter-next{display:inline-flex;align-items:center;gap:9px;font-weight:750;opacity:.85;border:1px solid currentColor;border-radius:100px;padding:9px 14px;text-transform:uppercase;letter-spacing:.10em;font-size:.66rem;transition:opacity .2s,transform .2s}\n.ds-chapter-next:hover{transform:translateY(-3px)}\n .ds-chapter-next{display:inline-flex;right:23px;bottom:19px;padding:8px 10px;font-size:.58rem;letter-spacing:.06em}\n .btn,.resource,.side-dots a,.ds-chapter-next{transition:none}"
+    },
+    {
+      "name": "Project surface",
+      "kind": "card",
+      "refersTo": "project-card",
+      "description": "Observed homepage style; contextual CSS custom properties come from DESIGN.md.",
+      "html": "<article class=\"ds-proj\">Selected project</article>",
+      "css": "\n.ds-proj{overflow:hidden;display:flex;flex-direction:column;min-height:430px;border:1px solid #dbe3de;border-radius:14px;background:#fff;box-shadow:0 15px 40px rgba(20,52,37,.035)}\n.ds-proj:nth-child(2) .proj-art{background:#deebe1}.ds-proj:nth-child(3) .proj-art{background:#dbe4f1}\n.ds-proj:nth-child(3) .proj-art span,.ds-proj:nth-child(3) .proj-art strong{color:#1c3c57}\n.ds-proj h3{font-size:1.3rem;line-height:1.26}\n.ds-proj p{color:var(--muted);font-size:.91rem;line-height:1.66}"
+    },
+    {
+      "name": "Resource surface",
+      "kind": "card",
+      "refersTo": "resource-card",
+      "description": "Observed homepage style; contextual CSS custom properties come from DESIGN.md.",
+      "html": "<article class=\"ds-resource\">Global Solar Atlas</article>",
+      "css": "\n.ds-resource{border:1px solid var(--line);border-radius:14px;background:var(--paper);padding:28px;min-height:292px;display:flex;flex-direction:column;transition:transform .2s,border .2s}\n.ds-resource:hover{transform:translateY(-3px);border-color:#a0b7aa}\n.ds-resource .label{font-size:.7rem;color:var(--green);text-transform:uppercase;letter-spacing:.13em;font-weight:800}\n.ds-resource .symbol{font-size:2.3rem;line-height:1;margin:28px 0}\n.ds-resource h3{font-size:1.22rem}.ds-resource p{font-size:.91rem;color:var(--muted);line-height:1.64}"
+    }
+  ],
+  "narrative": {
+    "overview": "This document records the existing implementation at commit `69af386`, not a proposed redesign. Sources are the inline CSS, semantic HTML, interaction script, favicon and rendered homepage. The owner describes its intended character as **professional, precise, and approachable**. The homepage is an ordered six-chapter presentation of José Aarón Lozano Campos’s work in finance, business strategy, technology and sustainability.\n\nThe identity combines deep navy and forest green stages with pale neutral chapters, lime highlights, compact bold headings, numbered chapter markers and restrained rounded cards. Content remains the authority: retain names and accents, career history, project attribution and status, confidentiality caveats, planned resources and existing outbound destinations.",
+    "keyCharacteristics": [
+      "Alternating dark and light chapters with a persistent wordmark and navigation.",
+      "A controlled desktop cascade; normal reading and touch scrolling on smaller screens.",
+      "Dense, left-aligned analytical content balanced by generous chapter space.",
+      "Geometric placeholder artwork, thin dividers, softly rounded surfaces and muted supporting text."
+    ],
+    "rules": [],
+    "dos": [
+      "**Do** preserve the navy/green/lime identity, wordmark, chapter order, existing copy and working interactions.",
+      "**Do** treat measured CSS and current screenshots as the source for faithful maintenance.",
+      "**Do** distinguish documentation of current behavior from recommendations in the audit."
+    ],
+    "donts": [
+      "**Don't** replace the typeface, palette, page composition or chapter behavior as part of this audit.",
+      "**Don't** add unsupported credentials, outcomes, a portrait, contact details or completed-project claims.",
+      "**Don't** migrate the static HTML/CSS/JavaScript site to a framework for documentation or testing."
+    ]
+  }
+}
