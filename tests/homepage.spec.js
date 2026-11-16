@@ -111,6 +111,7 @@ test('desktop cascade, keyboard, history, reduced motion and breakpoint probes',
   await page.keyboard.press('Enter'); await settle(page);
   await page.keyboard.press('Tab');
   probes.skipThenTab = await geometry(page);
+  await expect(page.locator('#home .ctas a').first()).toBeFocused();
   await page.goto('/'); await settle(page);
   await page.keyboard.press('PageDown'); await settle(page);
   probes.pageDown = await geometry(page);
@@ -153,10 +154,18 @@ test('targeted audit diagnostics', async ({ page, context }, info) => {
   const results = {};
   await page.goto('/#about'); await settle(page);
   results.about = await geometry(page);
-  results.footerAxe = (await new AxeBuilder({page}).include('#about > .chapter-footer').analyze()).violations;
+  results.footerAxe = (await new AxeBuilder({page}).include('#about .chapter-footer').analyze()).violations;
+  expect(results.footerAxe).toEqual([]);
+  const overlap = await page.locator('#about').evaluate(section => {
+    const content = section.querySelector('.wrap').getBoundingClientRect();
+    const controls = section.querySelector('.chapter-tools').getBoundingClientRect();
+    return { contentBottom: content.bottom, controlsTop: controls.top };
+  });
+  expect(overlap.controlsTop).toBeGreaterThanOrEqual(overlap.contentBottom);
   await chapter(page,'home');
   await page.locator('#home .chapter-next').click(); await settle(page);
   results.nextFocus = await geometry(page);
+  await expect(page.locator('#about h2')).toBeFocused();
   await page.keyboard.press('Tab');
   results.nextThenTab = await geometry(page);
   await page.screenshot({path:path.join(evidence,'screenshots/desktop-next-then-tab.png')});
@@ -174,6 +183,7 @@ test('targeted audit diagnostics', async ({ page, context }, info) => {
   await page.screenshot({path:path.join(evidence,'screenshots/mobile-menu-keyboard.png')});
   await page.keyboard.press('Escape');
   results.escapeFocus = await geometry(page);
+  await expect(page.locator('#menu-toggle')).toBeFocused();
   const swipe = await context.newCDPSession(page);
   // Native input events: the high-level synthetic gesture probe may be a no-op.
   await swipe.send('Emulation.setTouchEmulationEnabled', {enabled:true});
