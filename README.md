@@ -18,6 +18,8 @@ Impeccable is installed as a project-local Codex skill. Its pinned source and in
 
 The repository also includes Vercel's reviewed `web-design-guidelines` skill. [AGENTS.md](AGENTS.md) points coding agents to the design guidance and tests; [QA_SETUP.md](QA_SETUP.md) records installation results, sources, commands and permission boundaries. Hooks and external integrations remain disabled.
 
+[Material Design 3](docs/material-design-3.md) is installed as optional development tooling through the official `@material/web` package. Use `npm run preview:material` and open `http://127.0.0.1:4173/_dev/material3.html` for its separate local component preview; run `npm run test:material` for browser verification. The existing portfolio does not import the library.
+
 [A01–A04 correction review](docs/qa/a01-a04/REPORT.md) records the follow-up focus, contrast and footer fixes, expanded regression tests, and updated screenshots compared with the original audit.
 
 ## Browser testing
