@@ -20,6 +20,8 @@ The repository also includes Vercel's reviewed `web-design-guidelines` skill. [A
 
 [Material Design 3](docs/material-design-3.md) is installed as optional development tooling through the official `@material/web` package. Use `npm run preview:material` and open `http://127.0.0.1:4173/_dev/material3.html` for its separate local component preview; run `npm run test:material` for browser verification. The existing portfolio does not import the library.
 
+[Google Chrome Modern Web Guidance](docs/modern-web-guidance.md) is installed as a repository agent skill plus a pinned local CLI. Use `npm run guidance -- search "keyboard focus management"` and retrieve a matching guide with `npm run guidance -- retrieve "<id>"`. The wrapper disables telemetry; no hooks, automatic updates or DevTools integration are enabled.
+
 [A01–A04 correction review](docs/qa/a01-a04/REPORT.md) records the follow-up focus, contrast and footer fixes, expanded regression tests, and updated screenshots compared with the original audit.
 
 ## Browser testing

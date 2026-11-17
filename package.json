@@ -10,7 +10,8 @@
     "test:ui": "playwright test --ui",
     "test:report": "playwright show-report",
     "test:material": "playwright test material3.spec.js",
-    "preview:material": "python3 -m http.server 4173 --bind 127.0.0.1"
+    "preview:material": "python3 -m http.server 4173 --bind 127.0.0.1",
+    "guidance": "node scripts/modern-web-guidance.cjs"
   },
   "repository": {
     "type": "git",
@@ -24,7 +25,8 @@
   "devDependencies": {
     "@axe-core/playwright": "4.11.0",
     "@material/web": "2.5.0",
-    "@playwright/test": "1.57.0"
+    "@playwright/test": "1.57.0",
+    "modern-web-guidance": "1.0.1"
   },
   "private": true
 }
