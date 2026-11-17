@@ -8,6 +8,7 @@ Verified on 16 November 2026 in the attached Codex Cloud Linux environment. The 
 | --- | --- | --- |
 | Impeccable skill 4.9.2 | `.agents/skills/impeccable/`, official [pbakaus/impeccable](https://github.com/pbakaus/impeccable), pinned source `d41d9860b0094dcb68030657da63461212835aaa` | Existing installation retained. `engine-probe` returns `impeccable-engine 0.1.25`; `detect index.html --json` executes successfully and returns parseable findings. Exit 2 means findings, not a broken installation. |
 | Vercel web-design-guidelines 1.0.0 | `.agents/skills/web-design-guidelines/SKILL.md`, official [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills), pinned source `1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62` | Read the complete skill and referenced guideline document before installing. Manual copy matches upstream byte for byte. This skill directory contains exactly one Markdown file and **no scripts, dependencies, hooks or executables**. Upstream README declares MIT licensing. |
+| Modern Web Guidance 1.0.1 | `.agents/skills/modern-web-guidance/` plus the locked official Google Chrome npm package; [installation and review notes](docs/modern-web-guidance.md) | Added 17 November 2026. Adapted repository skill and local CLI wrapper; search/retrieval verified with telemetry disabled and runtime network/subprocess calls blocked. No installer, automatic updater or DevTools integration enabled. Requires Node 22+. |
 | Playwright Test 1.57.0 | Official Microsoft `@playwright/test` package, pinned in `package.json` and integrity-locked in `package-lock.json` | Ordinary local browser runner; desktop, tablet and mobile projects configured. Uses installed Chromium through an explicit executable override in this cloud environment. |
 | axe integration 4.11.0 | Official Deque `@axe-core/playwright` package, pinned and integrity-locked | Records accessibility observations during chapter walkthroughs; existing findings do not fail smoke tests. |
 | Playwright MCP | No callable Playwright MCP tools are exposed in this Codex Cloud session | Not installed or enabled. Cloud desktop capability alone does not establish Playwright MCP support. Ordinary Playwright works without MCP. |
@@ -32,7 +33,7 @@ Codex-compatible clients discover repository skills under `.agents/skills/`. Rel
 
 ## Reproduce browser QA
 
-Use Node 20 or newer (the current lockfile's transitive peer package requires it), npm and Python 3. Install the locked official npm packages with lifecycle scripts disabled:
+Use Node 22 or newer (required by the optional Modern Web Guidance CLI), npm and Python 3. Install the locked official npm packages with lifecycle scripts disabled:
 
 ```sh
 npm ci --ignore-scripts
