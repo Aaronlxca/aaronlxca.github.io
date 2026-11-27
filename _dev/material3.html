@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <title>Material Design 3 — local component preview</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --md-sys-color-primary: #246d54;
+      --md-sys-color-on-primary: #fff;
+      --md-sys-color-surface: #f6f8f4;
+      --md-sys-color-on-surface: #152e34;
+      --md-sys-color-on-surface-variant: #52676b;
+      --md-sys-color-outline: #52676b;
+      --md-ref-typeface-brand: Inter, ui-sans-serif, system-ui, sans-serif;
+      --md-ref-typeface-plain: Inter, ui-sans-serif, system-ui, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--md-sys-color-surface); color: var(--md-sys-color-on-surface); font: 1rem/1.6 system-ui, sans-serif; }
+    main { max-width: 850px; margin: 64px auto; padding: 0 24px; }
+    h1 { font-size: clamp(2rem, 5vw, 3rem); line-height: 1.15; margin: 0 0 20px; }
+    p { max-width: 65ch; }
+    .label { color: #246d54; font-weight: 700; }
+    section { border-top: 1px solid #d8e2dd; margin-top: 32px; padding-top: 24px; }
+    .actions { display: flex; flex-wrap: wrap; gap: 16px; margin: 24px 0; }
+    label { display: flex; align-items: center; gap: 12px; margin-bottom: 24px; }
+    md-outlined-text-field { width: min(100%, 420px); }
+    output { display: block; min-height: 2em; margin-top: 20px; }
+    @media (max-width: 620px) { main { margin: 32px auto; } }
+  </style>
+  <script type="importmap">
+    {
+      "imports": {
+        "@material/web/": "/node_modules/@material/web/",
+        "lit": "/node_modules/lit/index.js",
+        "lit/": "/node_modules/lit/",
+        "lit-html": "/node_modules/lit-html/lit-html.js",
+        "lit-html/": "/node_modules/lit-html/",
+        "lit-element/": "/node_modules/lit-element/",
+        "@lit/reactive-element": "/node_modules/@lit/reactive-element/reactive-element.js",
+        "@lit/reactive-element/": "/node_modules/@lit/reactive-element/",
+        "@lit/context": "/node_modules/@lit/context/index.js",
+        "@lit/context/": "/node_modules/@lit/context/",
+        "tslib": "/node_modules/tslib/tslib.es6.mjs"
+      }
+    }
+  </script>
+</head>
+<body>
+  <main>
+    <p class="label">Local component preview</p>
+    <h1>Material Design 3</h1>
+    <p>This development fixture verifies the installed Material Web components. It is separate from the portfolio and does not change the published design.</p>
+    <section aria-labelledby="controls-heading">
+      <h2 id="controls-heading">Component checks</h2>
+      <div class="actions">
+        <md-filled-button id="action">Test action</md-filled-button>
+        <md-outlined-button id="reset">Reset preview</md-outlined-button>
+      </div>
+      <label><md-checkbox id="option" aria-label="Preview option"></md-checkbox>Preview option</label>
+      <md-outlined-text-field id="note" label="Preview note"></md-outlined-text-field>
+      <output id="result" aria-live="polite">Ready.</output>
+    </section>
+  </main>
+  <script type="module">
+    import '@material/web/button/filled-button.js';
+    import '@material/web/button/outlined-button.js';
+    import '@material/web/checkbox/checkbox.js';
+    import '@material/web/textfield/outlined-text-field.js';
+    let count = 0;
+    const result = document.getElementById('result');
+    document.getElementById('action').addEventListener('click', () => {
+      result.textContent = `Action count: ${++count}`;
+    });
+    document.getElementById('reset').addEventListener('click', () => {
+      count = 0;
+      document.getElementById('option').checked = false;
+      document.getElementById('note').value = '';
+      result.textContent = 'Ready.';
+    });
+    await Promise.all(['md-filled-button', 'md-outlined-button', 'md-checkbox', 'md-outlined-text-field'].map(name => customElements.whenDefined(name)));
+    document.documentElement.dataset.materialReady = 'true';
+  </script>
+</body>
+</html>
