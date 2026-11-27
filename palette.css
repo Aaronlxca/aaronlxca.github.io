@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("fonts/jakarta.woff2") format("woff2");
+  font-weight: 200 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url("fonts/inter.woff2") format("woff2");
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+:root {
+  --navy: #0F1728;
+  --warm-white: #F7F4EF;
+  --cobalt: #2F5BFF;
+  --violet: #6E59D9;
+  --cyan: #53C7E8;
+  --lime: #B7E36A;
+  --sage: #89A88D;
+  --mist: #DDE6DE;
+  --apricot: #EAB39B;
+  --display: "Plus Jakarta Sans", Inter, sans-serif;
+  --read: Inter, system-ui, sans-serif;
+}

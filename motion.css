@@ -1,0 +1,187 @@
+:root {
+  --motion-ease: cubic-bezier(.16,1,.3,1);
+  --stage-ease: cubic-bezier(.62,0,.24,1);
+}
+
+/* Readable and operable states are also the static defaults. */
+.method-views { position: relative; min-inline-size: 0; margin: 0; border: 0; padding: 0; }
+.method-legend, .method-switch, .method-traces { display: none; }
+.method-traces { position: absolute; inset: -4% 0 auto; inline-size: 100%; block-size: auto; pointer-events: none; }
+.method-views .strata { isolation: isolate; pointer-events: none; }
+.method-views .stratum { transform-origin: 50% 47%; }
+.trace { opacity: 0; }
+.trace-line { stroke-linecap: round; stroke-linejoin: round; }
+.trace-line { stroke-dasharray: 1; stroke-dashoffset: 1; }
+.trace-connect .trace-line { stroke: var(--navy); stroke-width: 3.3; }
+.trace-connect circle { fill: var(--warm-white); stroke: var(--navy); stroke-width: 2; }
+.trace-act .trace-line { stroke: var(--lime); stroke-width: 4.7; }
+.trace-act { filter: drop-shadow(0 1px 1px var(--navy)); }
+
+@supports selector(.method:has(input:checked)) {
+  .method-legend {
+    display: block;
+    position: absolute;
+    inline-size: 1px;
+    block-size: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+  .method-switch {
+    position: relative;
+    z-index: 1;
+    scroll-margin-block-start: calc(var(--header-height) + .9rem);
+    display: grid;
+    grid-template-columns: repeat(3,minmax(0,1fr));
+    gap: .28rem;
+    margin-block: .8rem .6rem;
+    border-block-end: 1px solid var(--light-rule);
+  }
+  .method-choice { position: relative; text-align: center; }
+  .method-choice input {
+    position: absolute;
+    inset: .5rem auto auto 50%;
+    inline-size: 1px;
+    block-size: 1px;
+    margin: 0;
+    overflow: hidden;
+    clip-path: inset(50%);
+  }
+  .method-choice label {
+    position: relative;
+    display: grid;
+    place-content: center;
+    min-block-size: 2.75rem;
+    padding: .32rem .17rem .45rem;
+    color: var(--ink-soft);
+    font-size: clamp(.74rem,1.15vw,.9rem);
+    font-weight: 620;
+    cursor: pointer;
+    -webkit-tap-highlight-color: color-mix(in srgb, var(--cobalt) 14%, transparent);
+  }
+  .method-choice label:hover { color: var(--navy); }
+  .method-choice label::after {
+    position: absolute;
+    inset: auto 0 -1px;
+    block-size: 2px;
+    background: var(--cobalt);
+    content: "";
+    transform: scaleX(0);
+  }
+  .method-choice input:checked + label { color: var(--navy); }
+  .method-choice input:checked + label::after { transform: scaleX(1); }
+  .method-choice input:focus-visible + label { outline: 2px solid var(--cobalt); outline-offset: 2px; }
+  .method-traces { display: block; }
+  .method:has(#terrain-break:checked) .trace-break,
+  .method:has(#terrain-connect:checked) .trace-connect,
+  .method:has(#terrain-act:checked) .trace-act { opacity: 1; }
+  .method:has(#terrain-connect:checked) .trace-connect .trace-line,
+  .method:has(#terrain-act:checked) .trace-act .trace-line { stroke-dashoffset: 0; }
+
+  .method:has(#terrain-connect:checked) .stratum-blue { transform: translate(4.5%,-2%) scale(.96); }
+  .method:has(#terrain-connect:checked) .stratum-sage { transform: translate(-4.5%,2%) scale(.96); }
+  .method:has(#terrain-act:checked) .stratum-blue { transform: translate(-3%,-11%) scale(.95); }
+  .method:has(#terrain-act:checked) .stratum-mist { transform: translate(-1.5%,-2%) scale(.97); }
+  .method:has(#terrain-act:checked) .stratum-sage { transform: translate(1.25%,10%); }
+
+  .method:has(#terrain-break:checked) .method-steps li:first-child::before,
+  .method:has(#terrain-connect:checked) .method-steps li:nth-child(2)::before,
+  .method:has(#terrain-act:checked) .method-steps li:last-child::before {
+    outline: 1px solid var(--cobalt);
+    outline-offset: 2px;
+  }
+}
+
+.wide-nav a::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 .2rem;
+  block-size: 1px;
+  background: var(--cyan);
+  transform: scaleX(0);
+  transform-origin: left center;
+}
+.wide-nav a[aria-current]::after { transform: scaleX(1); }
+.action, .connect-link, .project-copy summary, .method-choice label, .header-resume {
+  transition: color 120ms ease-out, background-color 120ms ease-out, border-color 120ms ease-out;
+}
+.chapter-rail a::before { transition: background-color 130ms ease-out, border-color 130ms ease-out; }
+
+@media (prefers-reduced-motion: no-preference) {
+  html.cascade-ready #main { transition: transform 640ms var(--stage-ease); }
+  html.cascade-ready.cascade-jump #main { transition: none; }
+  #mobile-progress { transition: transform 180ms var(--motion-ease); }
+  .method-choice label::after, .wide-nav a::after { transition: transform 170ms var(--motion-ease); }
+  .method-views .stratum { transition: transform 590ms var(--motion-ease); }
+  .method-traces .trace { transition: opacity 160ms ease-out; }
+  .method-traces .trace-line { transition: stroke-dashoffset 550ms var(--motion-ease); }
+  .method:has(#terrain-connect:checked) .trace-connect .trace-line,
+  .method:has(#terrain-act:checked) .trace-act .trace-line { transition-delay: 55ms; }
+
+  .action svg, .next svg, .resource-link svg, .connect-link svg, .header-resume svg, .project-copy summary::before {
+    transition: transform 160ms var(--motion-ease);
+  }
+  .action:focus-visible svg, .action:active svg, .connect-link:focus-visible svg,
+  .header-resume:focus-visible svg, .resource:focus-visible .resource-link svg { transform: translateX(2px); }
+  .next:focus-visible svg, .next:active svg { transform: translateY(2px); }
+
+  .project-copy details[open] > p { animation: read-detail 220ms var(--motion-ease) both; }
+  .experience[data-motion="enter"] .timeline li::before {
+    animation: timeline-point 420ms var(--motion-ease) both;
+    animation-delay: calc(var(--point, 0) * 36ms);
+  }
+  .timeline li:nth-child(2) { --point: 1; }
+  .timeline li:nth-child(3) { --point: 2; }
+  .timeline li:nth-child(4) { --point: 3; }
+  .experience[data-motion="enter"] .venture-counts li::before {
+    animation: evidence-rule 480ms var(--motion-ease) both;
+  }
+  .venture-counts li { position: relative; }
+  .venture-counts li::before {
+    position: absolute;
+    inset: -1px 0 auto;
+    height: 1px;
+    background: var(--cobalt);
+    content: "";
+    opacity: 0;
+    transform-origin: left center;
+  }
+
+  .home-stage[data-motion="enter"] .art::before { animation: sky-light 4400ms ease-in-out both; }
+  .home-stage[data-motion="enter"] .waves,
+  .projects[data-motion="enter"] .project-atmosphere img,
+  .contact[data-motion="enter"] .contact-waves { animation: wave-drift 4300ms ease-in-out both; }
+  .contact[data-motion="enter"] .contact-terrain { animation: terrain-depth 3900ms ease-in-out both; }
+}
+
+@media (hover:hover) and (prefers-reduced-motion: no-preference) {
+  .action:hover svg, .connect-link:hover svg, .header-resume:hover svg,
+  .resource:hover .resource-link svg { transform: translateX(3px); }
+  .next:hover svg { transform: translateY(3px); }
+}
+
+@keyframes read-detail {
+  from { opacity: .94; transform: translateY(-3px); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes timeline-point {
+  0%, 100% { scale: 1; }
+  42% { scale: 1.36; }
+}
+@keyframes evidence-rule {
+  0% { transform: scaleX(0); opacity: .75; }
+  72% { transform: scaleX(1); opacity: .75; }
+  100% { transform: scaleX(1); opacity: 0; }
+}
+@keyframes sky-light {
+  0%,100% { transform: none; opacity: 1; }
+  55% { transform: translate3d(1.4%,-.8%,0) scale(1.025); opacity: .82; }
+}
+@keyframes wave-drift {
+  0%,100% { transform: none; }
+  57% { transform: translate3d(1.65%, -.95%, 0); }
+}
+@keyframes terrain-depth {
+  0%,100% { transform: none; }
+  62% { transform: translate3d(.32%,-.2%,0) scale(1.01); }
+}

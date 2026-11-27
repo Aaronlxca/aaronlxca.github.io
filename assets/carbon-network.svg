@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 670" fill="none">
+<defs>
+<linearGradient id="links"><stop stop-color="#DDE6DE" stop-opacity=".1"/><stop offset=".48" stop-color="#53C7E8"/><stop offset="1" stop-color="#B7E36A" stop-opacity=".72"/></linearGradient>
+</defs>
+<g stroke="url(#links)" stroke-width="2.1">
+<path d="M128 497 215 387 319 278 427 357 562 281 657 202 809 278 914 185 1018 94 M809 278 958 378 1042 422 M427 357 529 450 701 430 809 278" stroke-dasharray="3.5 6.5"/>
+<path d="M319 278 366 224 480 232 562 281" opacity=".65"/>
+</g>
+<g fill="#0F1728" stroke="#DDE6DE" stroke-width="1.7" opacity=".91">
+<circle cx="215" cy="387" r="4" />
+<circle cx="319" cy="278" r="4" />
+<circle cx="427" cy="357" r="8" />
+<circle cx="562" cy="281" r="4" />
+<circle cx="657" cy="202" r="8" />
+<circle cx="809" cy="278" r="4" />
+<circle cx="914" cy="185" r="8" />
+<circle cx="958" cy="378" r="4" />
+</g>
+</svg>

@@ -1,6 +1,7 @@
 const { test, expect } = require('@playwright/test');
 const AxeBuilder = require('@axe-core/playwright').default;
 const fs = require('node:fs');
+const { chapterLink } = require('./portfolio-controls');
 const path = require('node:path');
 // Keep repeatable QA runs separate from the committed historical audit.
 const evidence = process.env.QA_OUTPUT_DIR
@@ -11,14 +12,9 @@ fs.mkdirSync(path.join(evidence, 'screenshots'), { recursive: true });
 
 async function settle(page) { await page.waitForTimeout(1100); }
 async function chapter(page, id) {
-  // Inspect the rendered control before interacting, including the mobile menu.
-  if (await page.locator('#menu-toggle').isVisible()) {
-    if (await page.locator('#menu-toggle').getAttribute('aria-expanded') !== 'true') {
-      await page.locator('#menu-toggle').click();
-    }
-  }
-  await expect(page.locator(`#nav a[href="#${id}"]`)).toBeVisible();
-  await page.locator(`#nav a[href="#${id}"]`).click();
+  const link = await chapterLink(page, id);
+  await expect(link).toBeVisible();
+  await link.click();
   await settle(page);
 }
 async function geometry(page) {
@@ -29,8 +25,8 @@ async function geometry(page) {
     focused: document.activeElement.outerHTML.slice(0, 300),
     chapters: [...document.querySelectorAll('.chapter')].map(c => {
       const r = c.getBoundingClientRect();
-      const w = c.querySelector('.wrap').getBoundingClientRect();
-      const f = c.querySelector('.chapter-footer').getBoundingClientRect();
+      const w = c.querySelector('.reading, .chapter-content').getBoundingClientRect();
+      const f = c.querySelector('.chapter-footer, .section-footer').getBoundingClientRect();
       return { id: c.id, top: r.top, bottom: r.bottom, height: r.height,
         scrollHeight: c.scrollHeight, clientHeight: c.clientHeight, scrollTop: c.scrollTop,
         contentTop: w.top, contentBottom: w.bottom, footerTop: f.top, footerBottom: f.bottom,
@@ -49,7 +45,7 @@ test('six chapters: navigation, screenshots, geometry, accessibility and disclos
   await page.goto('/');
   await settle(page);
   if(info.project.name==='desktop') await expect(page.locator('html')).toHaveClass(/cascade-enabled/);
-  else expect(await page.locator('html').getAttribute('class')).not.toContain('cascade-enabled');
+  else await expect(page.locator('html')).not.toHaveClass(/cascade-enabled/);
   await expect(page.locator('main > section')).toHaveCount(6);
   const results = [];
   for (const [index, id] of ids.entries()) {
@@ -80,17 +76,18 @@ test('six chapters: navigation, screenshots, geometry, accessibility and disclos
   await summary.click();
   await expect(page.locator('#projects details').first()).not.toHaveAttribute('open', '');
   await chapter(page, 'home');
-  await page.locator('#home .ctas a[href="#projects"]').click();
+  await page.locator('#home .actions a[href="#projects"]').click();
   await settle(page);
   await expect(page.locator('#projects')).toHaveClass(/is-active/);
   await chapter(page, 'resources');
   await expect(page.locator('#resources a.resource')).toHaveCount(2);
-  await expect(page.locator('#resources .soon a')).toHaveCount(0);
+  await expect(page.locator('#resources .planned-resource a')).toHaveCount(0);
   await chapter(page, 'contact');
   await page.locator('#contact a[href="resume.html"]').click();
   await expect(page).toHaveURL(/resume\.html$/);
   await expect(page.locator('h1')).toBeVisible();
   expect(errors).toEqual([]);
+  expect(results.flatMap(result => result.violations)).toEqual([]);
   fs.writeFileSync(path.join(evidence, `${info.project.name}-results.json`), JSON.stringify({ errors, results }, null, 2));
 });
 
@@ -113,7 +110,7 @@ test('desktop cascade, keyboard, history, reduced motion and breakpoint probes',
   await page.keyboard.press('Enter'); await settle(page);
   await page.keyboard.press('Tab');
   probes.skipThenTab = await geometry(page);
-  await expect(page.locator('#home .ctas a').first()).toBeFocused();
+  await expect(page.locator('#home .actions a').first()).toBeFocused();
   await page.goto('/'); await settle(page);
   await page.keyboard.press('PageDown'); await settle(page);
   probes.pageDown = await geometry(page);
@@ -127,7 +124,7 @@ test('desktop cascade, keyboard, history, reduced motion and breakpoint probes',
   expect(probes.reduced.classes).not.toContain('cascade-enabled');
   await chapter(page, 'home');
   const before = await page.evaluate(() => scrollY);
-  await page.locator('#home .ctas a[href="#projects"]').click();
+  await page.locator('#home .actions a[href="#projects"]').click();
   await page.waitForTimeout(100);
   probes.reducedAfter100ms = { before, scrollY: await page.evaluate(() => scrollY), target: await page.locator('#projects').evaluate(e => e.offsetTop) };
   await settle(page);
@@ -157,36 +154,36 @@ test('targeted audit diagnostics', async ({ page, context }, info) => {
   const results = {};
   await page.goto('/#about'); await settle(page);
   results.about = await geometry(page);
-  results.footerAxe = (await new AxeBuilder({page}).include('#about .chapter-footer').analyze()).violations;
+  results.footerAxe = (await new AxeBuilder({page}).include('#about .section-footer').analyze()).violations;
   expect(results.footerAxe).toEqual([]);
   const overlap = await page.locator('#about').evaluate(section => {
-    const content = section.querySelector('.wrap').getBoundingClientRect();
-    const controls = section.querySelector('.chapter-tools').getBoundingClientRect();
+    const content = section.querySelector('.chapter-content').getBoundingClientRect();
+    const controls = section.querySelector('.section-footer').getBoundingClientRect();
     return { contentBottom: content.bottom, controlsTop: controls.top };
   });
   expect(overlap.controlsTop).toBeGreaterThanOrEqual(overlap.contentBottom);
   await chapter(page,'home');
-  await page.locator('#home .chapter-next').click(); await settle(page);
+  await page.locator('#home .next').click(); await settle(page);
   results.nextFocus = await geometry(page);
   await expect(page.locator('#about h2')).toBeFocused();
   await page.keyboard.press('Tab');
   results.nextThenTab = await geometry(page);
   await page.screenshot({path:path.join(evidence,'screenshots/desktop-next-then-tab.png')});
   await page.goto('/'); await settle(page);
-  await page.locator('#nav a[href="#projects"]').focus();
+  await page.locator('.wide-nav a[href="#projects"]').focus();
   await page.keyboard.press('Enter'); await settle(page);
   await page.keyboard.press('Tab');
   results.headerLinkThenTab = await geometry(page);
   await page.setViewportSize({width:390,height:844}); await page.goto('/'); await settle(page);
-  results.targets = await page.locator('#home .chapter-next,#menu-toggle').evaluateAll(es=>es.map(e=>({
+  results.targets = await page.locator('#home .next,.small-nav summary').evaluateAll(es=>es.map(e=>({
     label:e.textContent, width:e.getBoundingClientRect().width,height:e.getBoundingClientRect().height,font:getComputedStyle(e).fontSize
   })));
-  await page.locator('#menu-toggle').click();
-  await page.locator('#nav a[href="#about"]').focus();
+  await page.locator('.small-nav summary').click();
+  await page.locator('.small-nav a[href="#about"]').focus();
   await page.screenshot({path:path.join(evidence,'screenshots/mobile-menu-keyboard.png')});
   await page.keyboard.press('Escape');
   results.escapeFocus = await geometry(page);
-  await expect(page.locator('#menu-toggle')).toBeFocused();
+  await expect(page.locator('.small-nav summary')).toBeFocused();
   const swipe = await context.newCDPSession(page);
   // Native input events: the high-level synthetic gesture probe may be a no-op.
   await swipe.send('Emulation.setTouchEmulationEnabled', {enabled:true});
@@ -208,7 +205,7 @@ test('targeted audit diagnostics', async ({ page, context }, info) => {
   await tc.close();
   const nc=await context.browser().newContext({viewport:{width:390,height:844},javaScriptEnabled:false});
   const n=await nc.newPage(); await n.goto(info.project.use.baseURL+'/');
-  results.noJS={menuDisplay:await n.locator('#nav').evaluate(e=>getComputedStyle(e).display),chapterCount:await n.locator('.chapter').count()};
+  results.noJS={menuDisplay:await n.locator('.small-nav nav').evaluate(e=>getComputedStyle(e).display),chapterCount:await n.locator('.chapter').count()};
   await n.screenshot({path:path.join(evidence,'screenshots/mobile-no-javascript.png')});
   await nc.close();
   fs.writeFileSync(path.join(evidence,'targeted-diagnostics.json'),JSON.stringify(results,null,2));
